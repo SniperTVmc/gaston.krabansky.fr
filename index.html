@@ -112,6 +112,10 @@
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
 
+        <!-- Scripts -->
+        <script src="scripts/script.js" defer></script>
+
+
         <!-- Canonical Link -->
         <link rel="canonical" href="https://gaston.krabansky.fr/">
     </head>
@@ -231,25 +235,93 @@
 
             <section id="projects" class="section">
                 <div class="container">
-                    <h3>Mes projets réalisés</h3>
-                    <div class="projects-grid">
 
-                        <article class="project-card">
-                            <img src="images/essentialsx-gui.webp" alt="Aperçu du plugin Minecraft EssentialsX-GUI" class="project-img" loading="lazy">
-                            <h4>EssentialsX-GUI</h4>
-                            <p class="description">
-                                EssentialsX-GUI est un plugin Minecraft qui offre des interfaces graphiques conviviales
-                                pour gérer les fonctionnalités d'<a href="https://essentialsx.net/">EssentialsX</a>, facilitant ainsi la configuration et
-                                l'utilisation des commandes du serveur.
-                            </p>
-                            <div class="project-links">
-                                <a href="https://github.com/SniperTVmc/EssentialsX-GUI" target="_blank" class="btn small-btn github-btn">
-                                    <i class="fab fa-github"></i> Code Source
-                                </a>
+                    <h3>Mes projets réalisés</h3>
+
+                    <div class="projects-slider-wrapper">
+
+                        <button class="slider-btn prev" aria-label="Projet précédent">‹</button>
+
+                        <div class="projects-slider">
+                            <div class="projects-grid">
+
+                                <article class="project-card">
+                                    <img src="images/essentialsx-gui.webp" alt="Aperçu du plugin Minecraft EssentialsX-GUI" class="project-img" loading="lazy">
+                                    <h4>EssentialsX-GUI - 2025</h4>
+                                    <p class="description">
+                                        EssentialsX-GUI est un plugin Minecraft qui offre des interfaces graphiques conviviales
+                                        pour gérer les fonctionnalités d'<a href="https://essentialsx.net/">EssentialsX</a>, facilitant ainsi la configuration et
+                                        l'utilisation des commandes du serveur.
+                                    </p>
+                                    <div class="project-links">
+                                        <a href="https://github.com/SniperTVmc/EssentialsX-GUI" target="_blank" class="btn small-btn github-btn">
+                                            <i class="fab fa-github"></i> Code Source
+                                        </a>
+                                        <a href="https://sniper-tvmc.gitbook.io/essentialsx-gui/" target="_blank" class="btn small-btn live-btn">
+                                            <i class="fa-solid fa-book"></i> Documentation
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="project-card">
+                                    <img src="images/chatdefender.webp" alt="Aperçu du plugin Minecraft ChatDefender" class="project-img" loading="lazy">
+                                    <h4>ChatDefender - 2025</h4>
+                                    <p class="description">
+                                        ChatDefender est un plugin Minecraft conçu pour protéger le chat des serveurs contre le spam,
+                                        les publicités et les contenus inappropriés. Grâce à ses paramètres personnalisables et ses options de filtrage avancées,
+                                        ChatDefender garantit une expérience de chat sûre et agréable pour tous les joueurs.
+                                    </p>
+                                    <div class="project-links">
+                                        <a href="https://github.com/SniperTVmc/ChatDefender" target="_blank" class="btn small-btn github-btn">
+                                            <i class="fab fa-github"></i> Code Source
+                                        </a>
+                                    </div>
+                                </article>
+
+
+                                <article class="project-card">
+                                    <img src="images/gaston_krabansky_fr.webp" alt="Aperçu de mon site web personnel" class="project-img" loading="lazy">
+                                    <h4>Site Web Personnel - 2025</h4>
+                                    <p class="description">
+                                        Il s'agit de mon site web personnel, développé en HTML, CSS et JavaScript.
+                                        Il me permet de présenter mon parcours, mes compétences et mes différents projets réalisés.
+                                        Ayant peu d'expérience avec le front-end, et n'étant pas un web designer qualifié, ce site web
+                                        a été conçu avec l'aide d'IA génératives (principalement Gemini).
+                                    </p>
+                                    <div class="project-links">
+                                        <a href="https://gaston.krabansky.fr" target="_blank" class="btn small-btn live-btn">
+                                            <i class="fas fa-external-link-alt"></i> Voir le Site
+                                        </a>
+                                        <a href="https://github.com/SniperTVmc/ChatDefender" target="_blank" class="btn small-btn github-btn">
+                                            <i class="fab fa-github"></i> Code Source
+                                        </a>
+                                    </div>
+                                </article>
+
+
+                                <article class="project-card">
+                                    <img src="images/javapluginextended.webp" alt="Aperçu de mon framework pour plugins Minecraft" class="project-img" loading="lazy">
+                                    <h4>JavaPluginExtended - 2025</h4>
+                                    <p class="description">
+                                        JavaPluginExtended est un framework pour Bukkit/Paper/Bungeecord/Velocity. Il a pour but d'être léger, optimisé et facile à utiliser,
+                                        avec une large collection de méthodes prêtes à l'emploi afin de simplifier le développement de plugins Minecraft en Java.
+                                        Ce framework permet ainsi de gagner du temps et d'améliorer la qualité du code des plugins développés.
+                                    </p>
+                                    <div class="project-links">
+                                        <a href="https://github.com/SniperTVmc/ChatDefender" target="_blank" class="btn small-btn github-btn">
+                                            <i class="fab fa-github"></i> Code Source
+                                        </a>
+                                    </div>
+                                </article>
+
                             </div>
-                        </article>
+                        </div>
+
+                        <button class="slider-btn next" aria-label="Projet suivant">›</button>
 
                     </div>
+
+                    <div class="slider-dots" aria-label="Progression des projets"></div>
                 </div>
             </section>
 
@@ -299,7 +371,5 @@
                 </div>
             </div>
         </footer>
-
-        <script src="scripts/script.js"></script>
     </body>
 </html>

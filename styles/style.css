@@ -1,3 +1,10 @@
+
+
+/*
+    Global Styles
+*/
+
+
 :root {
     --clr-accent: #ff3b30;
     --clr-accent-hover: #ff5c5c;
@@ -99,6 +106,12 @@ a:hover {
     border-radius: 5px;
 }
 
+
+/*
+    Header Styles
+*/
+
+
 header {
     background-color: var(--clr-background);
     backdrop-filter: blur(10px);
@@ -131,6 +144,13 @@ header h1 img {
     transition: border-color 0.3s;
 }
 
+
+
+/*
+    Navigation Styles
+*/
+
+
 nav a {
     margin-left: 25px;
     font-weight: 500;
@@ -158,6 +178,12 @@ nav a:hover::after {
     width: 100%;
 }
 
+
+/*
+    Theme Toggle Button Styles
+*/
+
+
 .theme-toggle {
     position: fixed;
     top: 10px;
@@ -183,6 +209,12 @@ nav a:hover::after {
     color: var(--clr-accent);
 }
 
+
+/*
+    Hero Section Styles
+*/
+
+
 .hero {
     min-height: 80vh;
     display: flex;
@@ -203,6 +235,12 @@ nav a:hover::after {
     margin-bottom: 40px;
     font-weight: 300;
 }
+
+
+/*
+    About Section Styles
+*/
+
 
 #about {
     text-align: center;
@@ -268,6 +306,12 @@ nav a:hover::after {
     transform: translateY(-2px);
 }
 
+
+/*
+    Skills Section Styles
+*/
+
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -313,69 +357,128 @@ nav a:hover::after {
     text-align: center;
 }
 
+
+/*
+    Projects Slider Styles
+*/
+
+
+#projects {
+    text-align: center;
+}
+
+
+.projects-slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.projects-slider {
+    overflow: hidden;
+    width: 480px;
+    margin: 0 auto;
+}
+
 .projects-grid {
     display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    gap: 30px;
-    padding: 30px 0;
-    margin-top: 30px;
+    transition: transform 0.4s ease-in-out;
 }
 
-.projects-grid::-webkit-scrollbar {
-    height: 6px;
-}
-
-.projects-grid::-webkit-scrollbar-thumb {
-    background: var(--clr-border);
-    border-radius: 10px;
-}
-
-.projects-grid::-webkit-scrollbar-track {
-    background: var(--clr-card);
-}
 .project-card {
-    min-width: 350px;
-    max-width: 350px;
+    min-width: 480px;
+    max-width: 480px;
     flex-shrink: 0;
-    scroll-snap-align: center;
 
     background: var(--clr-card);
-    border-radius: 12px;
+    border-radius: 14px;
     overflow: hidden;
     box-shadow: 0 6px 15px var(--clr-shadow);
     border: 1px solid var(--clr-border);
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px var(--clr-shadow);
-    background-color: var(--clr-border);
+.project-card h4 {
+    padding: 18px 22px 8px;
+    font-size: 1.2rem;
+}
+
+.project-card .description {
+    padding: 0 22px 16px;
+    line-height: 1.5;
+}
+
+.project-links {
+    padding: 18px 22px;
+    display: flex;
+    justify-content: center; /* 👈 centrage horizontal */
+    gap: 12px;
+    border-top: 1px solid var(--clr-border);
+}
+
+.slider-btn {
+    background: var(--clr-card);
+    border: 1px solid var(--clr-border);
+    color: var(--clr-text);
+    font-size: 2rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
 }
 
 .project-img {
     width: 100%;
-    height: 220px;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
 }
 
-.project-card h4 {
-    padding: 15px 20px 5px;
-    margin: 0;
+.slider-btn:hover {
+    background: var(--clr-border);
+    transform: scale(1.1);
 }
 
-.project-card .description {
-    padding: 0 20px 10px;
-    flex-grow: 1;
+.slider-btn.prev {
+    margin-right: 20px;
 }
 
-.project-links {
-    padding: 15px 20px;
+.slider-btn.next {
+    margin-left: 20px;
+}
+
+.slider-dots {
     display: flex;
+    justify-content: center;
     gap: 10px;
-    border-top: 1px solid var(--clr-border);
+    margin-top: 18px;
 }
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--clr-border);
+    opacity: 0.4;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s, background 0.2s;
+}
+
+.slider-dot.active {
+    background: var(--clr-text);
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+
+/*
+    Contact Form Styles
+*/
+
 
 #contact {
     text-align: center;
@@ -434,6 +537,12 @@ nav a:hover::after {
     display: none;
 }
 
+
+/*
+    Footer Styles
+*/
+
+
 footer {
     background-color: var(--clr-card);
     padding: 20px 0;
@@ -454,113 +563,4 @@ footer p {
 .social-links a {
     font-size: 1.4em;
     margin-left: 15px;
-}
-
-/* --- 12. Media Queries (Réactivité) --- */
-@media (max-width: 768px) {
-    /* Ajustements généraux */
-    .section {
-        padding: 50px 0;
-    }
-
-    .container {
-        padding: 0 15px;
-    }
-
-    /* Typographie */
-    h2 {
-        font-size: 2.5em;
-    }
-    h3 {
-        font-size: 1.6em;
-    }
-
-    /* Header */
-    header .container {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px 15px;
-    }
-
-    nav {
-        margin-top: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    nav a {
-        margin: 5px 10px;
-        padding: 3px 0;
-    }
-
-    /* Theme Toggle */
-    .theme-toggle {
-        top: 15px;
-        right: 15px;
-        width: 40px;
-        height: 40px;
-        font-size: 1.2em;
-    }
-
-    /* Hero */
-    .hero {
-        text-align: center;
-        min-height: 50vh;
-    }
-
-    .hero h2 {
-        font-size: 3em;
-    }
-
-    .hero .tagline {
-        font-size: 1.1em;
-        margin-bottom: 30px;
-    }
-
-    /* About */
-    .about-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        text-align: center;
-    }
-
-    .profile-img-large {
-        width: 180px;
-        height: 180px;
-    }
-
-    .about-content p {
-        text-align: center;
-        padding: 0 10px;
-    }
-
-    .contact-actions {
-        justify-content: center;
-    }
-
-    /* Projets (Ajustement du défilement) */
-    .projects-grid {
-        padding: 30px 15px;
-    }
-
-    /* Footer */
-    footer .container {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
-/* Ajustement pour les très petits écrans (ex: < 480px) */
-@media (max-width: 600px) {
-    .project-card {
-        min-width: 85vw;
-        max-width: 85vw;
-    }
-
-    .contact-form {
-        padding: 20px;
-        border-radius: 0; /* Optionnel: enlever les coins arrondis pour "coller" au bord de l'écran */
-    }
 }
