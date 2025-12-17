@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gaston Krabansky</title>
+
+        <meta name="description" content="Gaston Krabansky, étudiant passionné de programmation à Lille (Java, Python, Administration Linux). Découvrez mes projets backend et systèmes.">
+        <meta name="robots" content="index, follow">
+
+        <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Gaston Krabansky",
+                "url": "https://www.ionos.fr/tools/analyse-site-web",
+                "sameAs": [
+                    "https://www.linkedin.com/in/gaston-krabansky/",
+                    "https://github.com/SniperTVmc/",
+                    "mailto:gaston.krabansky@gmail.com"
+                ],
+                "jobTitle": "Étudiant & Développeur",
+                "alumniOf": "Lycée Gaston Berger, Lille"
+            }
+        </script>
+
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    </head>
+
+    <body class="light-theme">
+    <button id="theme-toggle" class="theme-toggle" aria-label="Basculer le thème">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <header>
+        <div class="container">
+            <h1>
+                <img src="images/logo.webp" alt="[Votre Nom] Portfolio">
+                <span style="display: none;">Gaston Krabansky - Portfolio Développeur Java Python Linux Lille</span>
+            </h1>
+            <nav>
+                <a href="#about">À Propos</a>
+                <a href="#skills">Compétences</a>
+                <a href="#projects">Projets</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <h2>Salut, moi c'est Gaston !</h2>
+                <p class="tagline">
+                    J'ai 18 ans, je suis étudiant au lycée Gaston Berger à Lille, et je suis passionné par la programmation.
+                </p>
+                <a href="#projects" class="btn primary-btn">Découvrir mes projets</a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h3>À propos de moi</h3>
+                <div class="about-content">
+                    <div class="profile-container">
+                        <img src="images/logo.webp" alt="Photo de profil de Gaston Krabansky" class="profile-img-large">
+
+                        <div class="contact-actions">
+                            <a href="https://www.linkedin.com/in/gaston-krabansky/" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/SniperTVmc/" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="mailto:gaston.krabansky@gmail.com" aria-label="Email">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                            <a href="tel:+33648545504" aria-label="Téléphone">
+                                <i class="fas fa-phone"></i> Téléphone
+                            </a>
+                        </div>
+                    </div>
+                    <p>
+                        Cela fait maintenant plus de cinq ans que je m'y intéresse et j'ai pu acquérir
+                        de solides compétences dans ce domaine.
+                        Ayant principalement travaillé en Java, je suis à l'aise avec la
+                        programmation orientée objet, mais également le langage Python.<br><br>
+                        Mon intérêt s'est surtout porté sur le développement backend et l'administration système,
+                        bien que j'aie aussi des connaissances en HTML, CSS et JavaScript.<br>
+                        Par conséquent, j'ai pu m'intéresser à l'administration système sous Linux,
+                        notamment à travers la gestion de mon propre serveur Minecraft, d'un site web avec Apache,
+                        d'une base de données avec MariaDB, d'un serveur mail avec Poste.io,
+                        ainsi que la gestion de domaines avec Cloudflare et Let's Encrypt.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h3>Compétences Techniques</h3>
+
+                <div class="skills-grid">
+
+                    <div class="skill-category">
+                        <h4>Langages & Outils</h4>
+                        <ul class="skill-list">
+                            <li><i class="fab fa-java"></i> Java <b>(POO Avancée)</b></li>
+                            <li><i class="fab fa-python"></i> Python</li>
+                            <li><i class="fab fa-js"></i> JavaScript <b>(Notions de base)</b></li>
+                            <li><i class="fab fa-html5"></i> HTML5 & CSS3</li>
+                            <li><i class="fas fa-database"></i> SQL <b>(Requêtes)</b></li>
+                            <li><i class="fab fa-git-alt"></i> Git & Versioning</li>
+                            <li> <i class="devicon-jetbrains-plain"></i> JetBrains IDEs</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Architecture Système & Administration</h4>
+                        <ul class="skill-list">
+                            <li><i class="fab fa-linux"></i> Administration Linux <b>(Debian)</b></li>
+                            <li><i class="fab fa-windows"></i> Windows</li>
+                            <li><i class="fas fa-server"></i> Serveur Web (<a href="https://httpd.apache.org/">Apache</a>)</li>
+                            <li><i class="fas fa-envelope-open-text"></i> Serveur Mail (<a href="https://poste.io/">Poste.io</a>)</li>
+                            <li><i class="fas fa-database"></i> MySQL & MariaDB (Administration)</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Outils, Sécurité & Gestion de Projets</h4>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-lock"></i> Sécurité SSL/TLS (<a href="https://certbot.eff.org/">Certbot</a>)</li>
+                            <li><i class="fas fa-tachometer-alt"></i> Panneaux de Gestion (<a href="https://pterodactyl.io/">Pterodactyl</a>, <a href="https://pelican.dev/">Pelican</a>)</li>
+                            <li><i class="fas fa-gamepad"></i> Gestion de Serveurs de Jeu (<a href="https://papermc.io/">Minecraft</a>)</li>
+                            <li><i class="fas fa-cloud"></i> Gestion DNS & Domaines (<a href="https://www.cloudflare.com/">Cloudflare</a>)</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h3>Mes projets réalisés</h3>
+                <div class="projects-grid">
+
+                    <article class="project-card">
+                        <img src="images/essentialsx-gui.webp" alt="Aperçu du plugin Minecraft EssentialsX-GUI" class="project-img" loading="lazy">
+                        <h4>EssentialsX-GUI</h4>
+                        <p class="description">
+                            EssentialsX-GUI est un plugin Minecraft qui offre des interfaces graphiques conviviales
+                            pour gérer les fonctionnalités d'<a href="https://essentialsx.net/">EssentialsX</a>, facilitant ainsi la configuration et
+                            l'utilisation des commandes du serveur.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/SniperTVmc/EssentialsX-GUI" target="_blank" class="btn small-btn github-btn">
+                                <i class="fab fa-github"></i> Code Source
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h3>Contactez-moi</h3>
+                <p>Intéressé par mon profil ou un projet ? Laissez-moi un message !</p>
+
+                <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="e9e4f16b-9dd7-4356-9534-e4461f55eedc">
+
+                    <div class="form-group">
+                        <label for="name">Nom / Entreprise<a>*</a></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Objet</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email<a>*</a></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Votre Message<a>*</a></label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn primary-btn submit-btn">Envoyer le Message</button>
+                    <p id="form-message" class="form-message"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Gaston Krabansky. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/gaston-krabansky/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/SniperTVmc/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:gaston.krabansky@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    </body>
+</html>
