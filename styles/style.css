@@ -538,6 +538,12 @@ nav a:hover::after {
 }
 
 
+#h-captcha {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
 /*
     Footer Styles
 */

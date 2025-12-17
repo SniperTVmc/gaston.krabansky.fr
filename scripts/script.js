@@ -31,6 +31,7 @@ function applyTheme(theme) {
         themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
     }
     localStorage.setItem('theme', theme);
+    document.getElementById('h-captcha').setAttribute('data-theme', theme);
 }
 
 applyTheme(getInitialTheme());
@@ -110,6 +111,19 @@ contactForm.addEventListener('submit', async (e) => {
         formMessage.textContent = "❌ Erreur lors de l'envoi. Veuillez réessayer ou m'envoyer un mail directement.";
         formMessage.style.color = '#c0392b';
         console.error('Erreur du formulaire:', error);
+    }
+});
+
+const form = document.getElementById('e9e4f16b-9dd7-4356-9534-e4461f55eedc');
+
+form.addEventListener('submit', function(e) {
+
+    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+    if (!hCaptcha) {
+        e.preventDefault();
+        formMessage.textContent = "❌ Veuillez compléter le hCaptcha.";
+        formMessage.style.color = '#c0392b';
     }
 });
 
