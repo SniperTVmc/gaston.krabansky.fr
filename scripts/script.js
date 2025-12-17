@@ -102,28 +102,24 @@ contactForm.addEventListener('submit', async (e) => {
             formMessage.style.color = '#27ae60';
             form.reset();
         } else {
-            console.error('Web3Forms Error:', result.message);
-            formMessage.textContent = "❌ Erreur lors de l'envoi. Veuillez réessayer ou m'envoyer un mail directement.";
-            formMessage.style.color = '#c0392b';
+
+            const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+            if (!hCaptcha) {
+                e.preventDefault();
+                formMessage.textContent = "❌ Veuillez compléter le hCaptcha.";
+                formMessage.style.color = '#c0392b';
+
+            } else {
+                console.error('Web3Forms Error:', result.message);
+                formMessage.textContent = "❌ Erreur lors de l'envoi. Veuillez réessayer ou m'envoyer un mail directement.";
+                formMessage.style.color = '#c0392b';
+            }
         }
 
     } catch (error) {
         formMessage.textContent = "❌ Erreur lors de l'envoi. Veuillez réessayer ou m'envoyer un mail directement.";
         formMessage.style.color = '#c0392b';
         console.error('Erreur du formulaire:', error);
-    }
-});
-
-const form = document.getElementById('e9e4f16b-9dd7-4356-9534-e4461f55eedc');
-
-form.addEventListener('submit', function(e) {
-
-    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
-
-    if (!hCaptcha) {
-        e.preventDefault();
-        formMessage.textContent = "❌ Veuillez compléter le hCaptcha.";
-        formMessage.style.color = '#c0392b';
     }
 });
 
