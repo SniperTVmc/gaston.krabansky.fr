@@ -86,7 +86,7 @@ a:hover {
     transition: background-color 0.2s ease, transform 0.1s ease;
     border: none;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     font-size: 0.9em;
 }
 
@@ -124,9 +124,10 @@ header {
 
 header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 15px 20px;
+    width: 100%;
 }
 
 header h1 {
@@ -151,8 +152,14 @@ header h1 img {
 */
 
 
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
 nav a {
-    margin-left: 25px;
+    margin-left: 0;
     font-weight: 500;
     color: var(--clr-text);
     padding: 5px 0;
@@ -310,6 +317,11 @@ nav a:hover::after {
 /*
     Skills Section Styles
 */
+
+
+#skills {
+    text-align: center;
+}
 
 
 .skills-grid {
