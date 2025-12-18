@@ -655,3 +655,94 @@ footer p {
     font-size: 1.4em;
     margin-left: 15px;
 }
+
+
+/*
+    Responsive Design
+*/
+
+
+@media (max-width: 768px) {
+    h2 { font-size: 2.2em; }
+    h3 { font-size: 1.5em; }
+
+    .hero h2 {
+        font-size: 2.8em;
+    }
+
+    /* Header & Navigation */
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .projects-slider {
+        width: 100%;
+    }
+
+    .project-card {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .slider-btn {
+        display: none;
+    }
+
+    /* Footer */
+    footer .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .social-links a {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 50px 0;
+    }
+
+    .hero {
+        text-align: center;
+        min-height: 60vh;
+    }
+
+    .hero h2 {
+        font-size: 2.2em;
+    }
+
+    .hero .tagline {
+        font-size: 1.1em;
+    }
+
+    .profile-img-large {
+        width: 180px;
+        height: 180px;
+    }
+
+    .about-content p {
+        text-align: left;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .theme-toggle {
+        width: 40px;
+        height: 40px;
+        top: 5px;
+        right: 10px;
+    }
+}
