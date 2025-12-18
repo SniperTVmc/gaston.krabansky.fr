@@ -369,6 +369,81 @@ nav a:hover::after {
 
 
 /*
+    Background Section Styles
+ */
+
+
+#background {
+    text-align: center;
+}
+
+.tabs-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #f0f0f0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.tab-btn.active {
+    background: #ff3b30;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 30px;
+    border-left: 2px solid #ff3b30;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -39px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background: #ff3b30;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+}
+
+.timeline-date {
+    font-size: 0.9em;
+    color: #666;
+    font-weight: bold;
+}
+
+.timeline-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+
+/*
     Projects Slider Styles
 */
 

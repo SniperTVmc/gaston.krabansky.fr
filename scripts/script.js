@@ -176,3 +176,23 @@ prevBtn.addEventListener('click', () => {
 });
 
 createDots();
+
+
+// Background tab switcher
+
+
+function switchTab(tabId) {
+    const contents = document.querySelectorAll('.tab-content');
+    contents.forEach(content => content.classList.remove('active'));
+
+    const buttons = document.querySelectorAll('.tab-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    document.getElementById(tabId).classList.add('active');
+
+    buttons.forEach(btn => {
+        if (btn.getAttribute('onclick').includes(`'${tabId}'`)) {
+            btn.classList.add('active');
+        }
+    });
+}
