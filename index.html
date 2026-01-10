@@ -6,11 +6,12 @@
         <!-- Basic Meta Tags -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gaston Krabansky | Étudiant en Informatique & Développeur Java</title>
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        <title>Gaston Krabansky | Étudiant en Informatique</title>
 
 
         <!-- SEO Meta Tags -->
-        <meta name="description" content="Gaston Krabansky, étudiant passionné de programmation à Lille (Java, Python, Administration Linux). Découvrez mes projets backend et systèmes.">
+        <meta name="description" content="Gaston Krabansky, étudiant en BTS SIO option SLAM à Lille. Passionné par le développement Java, Python et l'administration système Linux.">
         <meta name="robots" content="index, follow">
 
 
@@ -24,7 +25,7 @@
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:url" content="https://gaston.krabansky.fr/">
         <meta property="twitter:title" content="Gaston Krabansky | Étudiant en Informatique & Développeur Java">
-        <meta property="twitter:description" content="Découvrez mes projets backend et mon parcours en programmation.">
+        <meta property="twitter:description" content="Étudiant en informatique spécialisé en développement Java.">
         <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/204613336?v=4">
 
 
@@ -45,53 +46,38 @@
                 "alternateName": "Sniper_TVmc",
                 "url": "https://gaston.krabansky.fr",
                 "image": "https://avatars.githubusercontent.com/u/204613336?v=4",
-                "description": "Étudiant français passionné par l'informatique et la programmation, spécialisé en Java.",
+                "description": "Étudiant français en BTS SIO spécialisé en développement Java et administration Linux.",
                 "jobTitle": "Étudiant en Informatique & Développeur Java",
                 "address": {
                     "@type": "PostalAddress",
-                    "addressLocality": "Houplin-Ancoisne",
+                    "addressLocality": "Lille",
                     "addressRegion": "Hauts-de-France",
                     "addressCountry": "FR"
                 },
                 "email": "mailto:gaston.krabansky@gmail.com",
                 "sameAs": [
                     "https://www.linkedin.com/in/gaston-krabansky/",
-                    "https://github.com/SniperTVmc",
-                    "https://github.com/gaston-krabansky"
+                    "https://github.com/SniperTVmc"
                 ],
                 "knowsAbout": [
-                    "Java",
-                    "Python",
-                    "SQL",
-                    "HTML/CSS/JavaScript",
-                    "Git",
-                    "Linux (Debian)",
-                    "Spigot API"
+                    "Java", "Python", "SQL", "HTML/CSS/JavaScript", "Git", "Linux (Debian)", "Spigot API", "Docker"
                 ],
-                "alumniOf": {
-                    "@type": "EducationalOrganization",
-                    "name": "Lycée Marguerite de Flandre",
-                    "location": {
-                        "@type": "Place",
-                        "name": "Gondecourt, France"
+                "alumniOf": [
+                    {
+                        "@type": "EducationalOrganization",
+                        "name": "Lycée Gaston Berger",
+                        "description": "BTS Services Informatiques aux Organisations (SIO) - Option SLAM"
+                    },
+                    {
+                        "@type": "EducationalOrganization",
+                        "name": "Lycée Marguerite de Flandre"
                     }
-                },
+                ],
                 "mainEntityOfPage": {
                     "@type": "WebSite",
                     "name": "Site personnel de Gaston KRABANSKY",
                     "url": "https://gaston.krabansky.fr"
-                },
-                "hasPart": [
-                    {
-                        "@type": "SoftwareSourceCode",
-                        "name": "EssentialsX-GUI",
-                        "description": "Un addon pour EssentialsX ajoutant des interfaces graphiques (GUI) pour les fonctionnalités principales (homes, kits, warps).",
-                        "codeRepository": "https://github.com/SniperTVmc/EssentialsX-GUI",
-                        "programmingLanguage": "Java",
-                        "runtimePlatform": "Spigot API",
-                        "creativeWorkStatus": "Stable and maintained"
-                    }
-                ]
+                }
             }
         </script>
 
@@ -108,8 +94,7 @@
 
         <!-- Stylesheets -->
         <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
         <!-- Scripts -->
@@ -118,328 +103,319 @@
 
         <!-- Canonical Link -->
         <link rel="canonical" href="https://gaston.krabansky.fr/">
+
+
     </head>
+    <body>
 
-    <body class="light-theme">
-        <button id="theme-toggle" class="theme-toggle" aria-label="Basculer le thème">
-            <i class="fas fa-moon"></i>
-        </button>
 
-        <header>
-            <div class="container">
-                <h1>
-                    <span style="display: none;">Gaston Krabansky - Étudiant en Informatique & Développeur Java</span>
-                </h1>
-                <nav>
-                    <a href="#about">À Propos</a>
-                    <a href="#skills">Compétences</a>
-                    <a href="#background">Parcours</a>
-                    <a href="#projects">Projets</a>
-                    <a href="#contact">Contact</a>
-                </nav>
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="logo">Gaston <span class="highlight">Krabansky</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#experience">Parcours</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+
+        <!-- Hero Section -->
+        <header id="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Bonjour, je suis <span class="highlight">Gaston Krabansky</span></h1>
+                <p>Étudiant en informatique / Développeur Java</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-fill">Voir mes projets <i class="fas fa-arrow-down"></i></a>
+                    <a href="files/cv-gaston_krabansky_fr.pdf" download class="btn btn-outline" target="_blank">Télécharger mon CV <i class="fas fa-download"></i></a>
+                </div>
             </div>
         </header>
 
-        <main>
-            <section id="hero" class="hero">
-                <div class="container">
-                    <h2>Salut, moi c'est Gaston !</h2>
-                    <p class="tagline">
-                        J'ai 18 ans, je suis étudiant au lycée Gaston Berger à Lille, et je suis passionné par la programmation.
-                    </p>
-                    <a href="#projects" class="btn primary-btn">Découvrir mes projets</a>
+
+        <!-- About Section -->
+        <section id="about" class="container">
+            <h2 class="section-title">À propos de <span>moi</span></h2>
+            <div class="about-grid">
+                <div class="about-img">
+                    <img src="../images/logo.webp" alt="Gaston Krabansky" style="width: 100%; border-radius: 15px; border: 2px solid var(--main-color);">
                 </div>
-            </section>
+                <div class="about-text">
+                    <p>
+                        Cela fait maintenant plus de cinq ans que je m'intéresse à la programmation. Depuis mes
+                        débuts et jusqu'à aujourd'hui, j'ai pu acquérir de solides compétences dans le domaine.<br>
+                        Ayant principalement travaillé en Java, et Python, je suis à l'aise avec la
+                        programmation orientée objet.<br>
+                        Mon intérêt s'est surtout porté sur le développement backend et l'administration système,
+                        bien que j'aie aussi des connaissances en HTML, CSS et JavaScript.<br>
+                        De ce fait, j'ai pu m'intéresser à l'administration système sous Linux, notamment à travers
+                        la gestion de mon propre serveur Minecraft : gestion de sites web avec Apache,
+                        de bases de données avec MariaDB, d'un serveur mail avec Poste.io, la gestion de
+                        domaines avec Cloudflare et Certbot, et également d'une infrastructure permettant la
+                        gestion de serveurs de jeu avec Pterodactyl (ou son successeur Pelican).
+                    </p>
 
-            <section id="about" class="section">
-                <div class="container">
-                    <h3>À propos de moi</h3>
-                    <div class="about-content">
-                        <div class="profile-container">
-                            <img src="images/logo.webp" alt="Photo de profil de Gaston Krabansky" class="profile-img-large">
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/gaston-krabansky/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/SniperTVmc/" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:gaston.krabansky@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+33648545504" target="_blank"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                            <div class="contact-actions">
-                                <a href="https://www.linkedin.com/in/gaston-krabansky/" target="_blank" aria-label="LinkedIn">
-                                    <i class="fab fa-linkedin"></i> LinkedIn
-                                </a>
-                                <a href="https://github.com/SniperTVmc/" target="_blank" aria-label="GitHub">
-                                    <i class="fab fa-github"></i> GitHub
-                                </a>
-                                <a href="mailto:gaston.krabansky@gmail.com" aria-label="Email">
-                                    <i class="fas fa-envelope"></i> Email
-                                </a>
-                                <a href="tel:+33648545504" aria-label="Téléphone">
-                                    <i class="fas fa-phone"></i> Téléphone
-                                </a>
-                            </div>
+
+        <!-- Skills Section -->
+        <section id="skills" class="bg-dark">
+            <div class="container">
+                <h2 class="section-title">Mes <span>Compétences</span></h2>
+                <div class="skills-grid-new">
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Programmation</h3>
                         </div>
-                        <p>
-                            Cela fait maintenant plus de cinq ans que je m'intéresse à la programmation. Depuis mes
-                            débuts et jusqu'à aujourd'hui, j'ai pu acquérir de solides compétences dans le domaine.
-                            Ayant principalement travaillé en Java, et Python, je suis à l'aise avec la
-                            programmation orientée objet.<br>
-                            Mon intérêt s'est surtout porté sur le développement backend et l'administration système,
-                            bien que j'aie aussi des connaissances en HTML, CSS et JavaScript.<br>
-                            De ce fait, j'ai pu m'intéresser à l'administration système sous Linux, notamment à travers
-                            la gestion de mon propre serveur Minecraft : gestion de sites web avec Apache,
-                            de bases de données avec MariaDB, d'un serveur mail avec Poste.io, la gestion de
-                            domaines avec Cloudflare et Certbot, et également d'une infrastructure permettant la
-                            gestion de serveurs de jeu avec Pterodactyl (ou son successeur Pelican).<br>
+                        <ul class="about-list">
+                            <li class="has-tooltip" data-tooltip="Expérience de 3 ans en Java, notamment via des projets personnels autour de Minecraft.">
+                                <strong>Java :</strong> POO avancée, Maven, projets personnels <i class="fas fa-question info-icon"></i>
+                            </li>
+                            <li class="has-tooltip" data-tooltip="Expérience de 3 ans en Python grâce à mes études et des projets scolaires.">
+                                <strong>Python :</strong> Scripts, projets scolaires <i class="fas fa-question info-icon"></i>
+                            </li>
+                            <li class="has-tooltip" data-tooltip="Connaissances de base en HTML5, CSS3 et JavaScript acquises lors de mes études.">
+                                <strong>Web :</strong> HTML5, CSS3, JavaScript (Niveau scolaire <i class="fas fa-question info-icon"></i>)
+                            </li>
+                            <li><strong>Base de données :</strong> SQL (Conception & Requêtes)</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-server"></i>
+                            <h3>Systèmes & Réseaux</h3>
+                        </div>
+                        <ul class="about-list">
+                            <li><strong>OS :</strong> Administration Linux (Debian) & Windows</li>
+                            <li class="has-tooltip" data-tooltip="Expérience pratique dans la gestion et la mise en place de serveurs web et mail.">
+                                <strong>Applications web :</strong> Apache2, Poste.io, phpMyAdmin, ...<i class="fas fa-question info-icon"></i>
+                            </li>
+                            <li><strong>Bases de données :</strong> MariaDB & MySQL (Installation, configuration et utilisation)</li>
+                            <li><strong>Sécurité :</strong> Gestion SSL/TLS (Certbot), Pare-feu Linux (UFW)</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Outils & Projets</h3>
+                        </div>
+                        <ul class="about-list">
+                            <li><strong>Versioning :</strong> Git & GitHub</li>
+                            <li class="has-tooltip" data-tooltip="Expérience pratique dans la gestion et la mise en place d'infrastructures de serveurs de jeu.">
+                                <strong>Infrastructure :</strong> Pterodactyl et Pelican <i class="fas fa-question info-icon"></i>
+                            </li>
+                            <li class="has-tooltip" data-tooltip="Légère expérience pratique dans la gestion de domaines via Cloudflare : configuration DNS et règles de sécurité.">
+                                <strong>Gestion de domaine :</strong> Cloudflare <i class="fas fa-question info-icon"></i>
+                            </li>
+                            <li><strong>IDE :</strong> Suite JetBrains (IntelliJ, PyCharm, PhpStorm), VSCode</li>
+                            <li class="has-tooltip" data-tooltip="De nos jours, l'IA est un outil incontournable dans le développement.
+                                                                        Je l'utilise afin d'améliorer ma productivité et la qualité de mon code sans pour
+                                                                        autant négliger ma propre réflexion et la bonne compréhension des sujets abordés.">
+                                <strong>IA :</strong> Utilisation intelligente <i class="fas fa-question info-icon"></i> de modèles avancés (ChatGPT, Gemini)
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Experience Section -->
+        <section id="experience" class="container">
+            <h2 class="section-title">Mon <span>Parcours</span></h2>
+
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-target="#pro">Professionnel</button>
+                <button class="tab-btn" data-target="#edu">Scolaire</button>
+            </div>
+
+            <div class="tab-content active-content" id="pro">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Administrateur informatique - France 3 (Stage d'observation)</h3>
+                        <p class="date">Décembre 2021</p>
+                        <p>Stage de trois jours au sein de la chaîne de télévision France 3 dans le service administration réseau.<br>
+                            Découverte des infrastructures réseau, des systèmes de diffusion et du métier d'administrateur réseau.<br>
+                            Initiation au langage Python avec la création de scripts simples.
                         </p>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section id="skills" class="section">
-                <div class="container">
-                    <h3>Compétences Techniques</h3>
-
-                    <div class="skills-grid">
-
-                        <div class="skill-category">
-                            <h4>Langages & Outils</h4>
-                            <ul class="skill-list">
-                                <li><i class="fab fa-java"></i> Java <b>(POO Avancée)</b>, Maven</li>
-                                <li><i class="fab fa-python"></i> Python</li>
-                                <li><i class="fab fa-js"></i> JavaScript <b>(Notions de base)</b></li>
-                                <li><i class="fab fa-html5"></i> HTML5 & CSS3</li>
-                                <li><i class="fas fa-database"></i> SQL <b>(Requêtes, Tables et BDD)</b></li>
-                                <li><i class="fab fa-git-alt"></i> Git & Versioning</li>
-                                <li> <i class="devicon-jetbrains-plain"></i> JetBrains IDEs</li>
-                                <li> <i class="fas fa-code"></i> Spigot, Bukkit, BungeeCord & Velocity API</li>
-                            </ul>
-                        </div>
-
-                        <div class="skill-category">
-                            <h4>Architecture Système & Administration</h4>
-                            <ul class="skill-list">
-                                <li><i class="fab fa-linux"></i> Administration Linux <b>(Debian)</b></li>
-                                <li><i class="fab fa-windows"></i> Windows</li>
-                                <li><i class="fas fa-server"></i> Serveur Web (<a href="https://httpd.apache.org/">Apache</a>)</li>
-                                <li><i class="fas fa-envelope-open-text"></i> Serveur Mail (<a href="https://poste.io/">Poste.io</a>)</li>
-                                <li><i class="fas fa-database"></i> MySQL & MariaDB <b>(Administration)</b></li>
-                            </ul>
-                        </div>
-
-                        <div class="skill-category">
-                            <h4>Outils, Sécurité & Gestion de Projets</h4>
-                            <ul class="skill-list">
-                                <li><i class="fas fa-lock"></i> Sécurité SSL/TLS (<a href="https://certbot.eff.org/">Certbot</a>)</li>
-                                <li><i class="fas fa-tachometer-alt"></i> Panneaux de Gestion (<a href="https://pterodactyl.io/">Pterodactyl</a>, <a href="https://pelican.dev/">Pelican</a>)</li>
-                                <li><i class="fas fa-gamepad"></i> Gestion de Serveurs de Jeu (<a href="https://papermc.io/">Minecraft</a>)</li>
-                                <li><i class="fas fa-cloud"></i> Gestion DNS & Domaines (<a href="https://www.cloudflare.com/">Cloudflare</a>)</li>
-                            </ul>
-                        </div>
-
+            <div class="tab-content" id="edu">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>BTS SIO - Option SLAM</h3>
+                        <p class="date">Septembre 2025 - Présent</p>
+                        <p>Actuellement en première année de BTS Services Informatiques aux Organisations.<br>
+                            Option Solutions Logicielles et Applications Métiers, au lycée Gaston Berger à Lille.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Baccalauréat Général - Spécialités NSI & Maths</h3>
+                        <p class="date">Septembre 2022 - juillet 2025</p>
+                        <p>Obtention du Baccalauréat Général au lycée Marguerite de Flandre à Gondecourt.<br>
+                            Spécialités : Numérique et Sciences Informatiques (NSI) et Mathématiques.<br>
+                            Section Européenne Anglais.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Brevet des Collèges</h3>
+                        <p class="date">Septembre 2018 - juillet 2022</p>
+                        <p>Obtention du Diplôme National du Brevet au collège Hergé à Gondecourt.<br>
+                            Concours Castor Informatique : 1er de l'établissement deux années consécutives.
+                        </p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="background" class="section">
-                <div class="container">
 
-                    <h3>Mon parcours</h3>
+        <!-- Projects Section -->
+        <section id="projects" class="bg-dark">
+            <div class="container no-overflow">
+                <h2 class="section-title">Mes <span>Projets</span></h2>
 
-                    <div class="tabs-container">
-                        <button class="tab-btn active" onclick="switchTab('scolaire')">Scolaire</button>
-                        <button class="tab-btn" onclick="switchTab('pro')">Professionnel</button>
-                    </div>
+                <div class="carousel-container">
+                    <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
 
-                    <div id="scolaire" class="tab-content active">
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-date">Septembre 2025 - Présent</div>
-                                <div class="timeline-title">BTS SIO : Option SLAM</div>
-                                <p>Actuellement en première année de BTS Services Informatiques aux Organisations,
-                                    option Solutions Logicielles et Applications Métiers,
-                                    au lycée Gaston Berger à Lille.
+                    <div class="carousel-track">
+                        <div class="project-card">
+                            <div class="project-img" style="background-image: url('images/essentialsx-gui.webp');"></div>
+                            <div class="project-info">
+                                <h3>EssentialsX-GUI - 2025</h3>
+                                <p class="tech-stack">Java | SQL | Maven | Spigot API</p>
+                                <p>EssentialsX-GUI est un plugin Minecraft qui offre des interfaces graphiques conviviales pour gérer les fonctionnalités d'EssentialsX,
+                                    facilitant ainsi la configuration et l'utilisation des commandes du serveur.
                                 </p>
-                            </div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-date">Septembre 2022 - Juillet 2025</div>
-                                <div class="timeline-title">Baccalauréat Général - Spécialité NSI & Maths</div>
-                                <p>Obtention du Baccalauréat Général au lycée Marguerite de Flandre à Gondecourt,
-                                    avec les spécialités Numérique et Sciences Informatiques (NSI) et Mathématiques.<br>
-                                    Section Européenne Anglais.
-                                </p>
-                            </div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-date">Septembre 2018 - Juillet 2022</div>
-                                <div class="timeline-title">Brevet des Collèges</div>
-                                <p>Obtention du Diplôme National du Brevet au collège Hergé à Gondecourt.<br>
-                                    Concours Castor Informatique : 1er de l'établissement deux années consécutives.
-                                </p>
+                                <div class="project-links">
+                                    <a href="https://sniper-tvmc.gitbook.io/essentialsx-gui/" class="btn btn-fill sm" target="_blank">Documentation <i class="fas fa-book"></i></a>
+                                    <a href="https://github.com/SniperTVmc/EssentialsX-GUI" class="btn btn-outline sm" target="_blank">Code Source <i class="fab fa-github"></i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="pro" class="tab-content">
-                        <div class="timeline">
-
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-date">Décembre 2021</div>
-                                <div class="timeline-title">Stage d'observation chez France 3</div>
-                                <p>
-                                    Stage de trois jours au sein de la chaîne de télévision France 3
-                                    dans le service administration réseau.<br>
-                                    Découverte des infrastructures réseau, des systèmes de diffusion
-                                    et du métier d'administrateur réseau.<br>
-                                    Initiation au langage Python avec la création de scripts simples.
+                        <div class="project-card">
+                            <div class="project-img" style="background-image: url('images/chatdefender.webp');"></div>
+                            <div class="project-info">
+                                <h3>ChatDefender - 2025</h3>
+                                <p class="tech-stack">Java | Maven | Spigot API | Perspective API</p>
+                                <p>ChatDefender est un plugin Minecraft conçu pour protéger le chat des serveurs contre le spam,
+                                    les publicités et les contenus inappropriés.
+                                    Grâce à ses paramètres personnalisables et ses options de filtrage avancées,
+                                    ChatDefender garantit une expérience de chat sûre et agréable pour tous les joueurs.
                                 </p>
+                                <div class="project-links">
+                                    <a href="https://github.com/SniperTVmc/ChatDefender" class="btn btn-outline sm" target="_blank">Code Source <i class="fab fa-github"></i></a>
+                                </div>
                             </div>
+                        </div>
 
+                        <div class="project-card">
+                            <div class="project-img" style="background-image: url('images/javapluginextended.webp');"></div>
+                            <div class="project-info">
+                                <h3>JavaPluginExtended - 2025</h3>
+                                <p class="tech-stack">Java | Maven | Spigot API | Perspective API</p>
+                                <p>JavaPluginExtended est un framework pour Bukkit/Paper/Bungeecord/Velocity.
+                                    Il a pour but d'être léger, optimisé et facile à utiliser, avec une large collection de
+                                    méthodes prêtes à l'emploi afin de simplifier le développement de plugins Minecraft en Java.
+                                </p>
+                                <div class="project-links">
+                                    <a href="https://github.com/SniperTVmc/ChatDefender" class="btn btn-outline sm" target="_blank">Code Source <i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-img" style="background-image: url('images/gaston_krabansky_fr.webp');"></div>
+                            <div class="project-info">
+                                <h3>Site Web Personnel - 2025</h3>
+                                <p class="tech-stack">HTML | CSS | JavaScript</p>
+                                <p> Il s'agit de mon site web personnel, développé en HTML, CSS et JavaScript.
+                                    Ayant peu d'expérience avec le front-end, et n'étant pas un web designer qualifié,
+                                    ce site web a été conçu avec l'aide d'IA génératives (principalement Gemini),
+                                    puis affiné et personnalisé par mes soins.
+                                </p>
+                                <div class="project-links">
+                                    <a href="https://gaston.krabansky.fr" class="btn btn-fill sm" target="_blank">Voir le site <i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/SniperTVmc/gaston.krabansky.fr" class="btn btn-outline sm" target="_blank">Code Source <i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <section id="projects" class="section">
-                <div class="container">
-
-                    <h3>Mes projets réalisés</h3>
-
-                    <div class="projects-slider-wrapper">
-
-                        <button class="slider-btn prev" aria-label="Projet précédent">‹</button>
-
-                        <div class="projects-slider">
-                            <div class="projects-grid">
-
-                                <article class="project-card">
-                                    <img src="images/essentialsx-gui.webp" alt="Aperçu du plugin Minecraft EssentialsX-GUI" class="project-img" loading="lazy">
-                                    <h4>EssentialsX-GUI - 2025</h4>
-                                    <p class="description">
-                                        EssentialsX-GUI est un plugin Minecraft qui offre des interfaces graphiques conviviales
-                                        pour gérer les fonctionnalités d'<a href="https://essentialsx.net/">EssentialsX</a>, facilitant ainsi la configuration et
-                                        l'utilisation des commandes du serveur.
-                                    </p>
-                                    <div class="project-links">
-                                        <a href="https://github.com/SniperTVmc/EssentialsX-GUI" target="_blank" class="btn small-btn github-btn">
-                                            <i class="fab fa-github"></i> Code Source
-                                        </a>
-                                        <a href="https://sniper-tvmc.gitbook.io/essentialsx-gui/" target="_blank" class="btn small-btn live-btn">
-                                            <i class="fa-solid fa-book"></i> Documentation
-                                        </a>
-                                    </div>
-                                </article>
-
-                                <article class="project-card">
-                                    <img src="images/chatdefender.webp" alt="Aperçu du plugin Minecraft ChatDefender" class="project-img" loading="lazy">
-                                    <h4>ChatDefender - 2025</h4>
-                                    <p class="description">
-                                        ChatDefender est un plugin Minecraft conçu pour protéger le chat des serveurs contre le spam,
-                                        les publicités et les contenus inappropriés. Grâce à ses paramètres personnalisables et ses options de filtrage avancées,
-                                        ChatDefender garantit une expérience de chat sûre et agréable pour tous les joueurs.
-                                    </p>
-                                    <div class="project-links">
-                                        <a href="https://github.com/SniperTVmc/ChatDefender" target="_blank" class="btn small-btn github-btn">
-                                            <i class="fab fa-github"></i> Code Source
-                                        </a>
-                                    </div>
-                                </article>
+            </div>
+        </section>
 
 
-                                <article class="project-card">
-                                    <img src="images/gaston_krabansky_fr.webp" alt="Aperçu de mon site web personnel" class="project-img" loading="lazy">
-                                    <h4>Site Web Personnel - 2025</h4>
-                                    <p class="description">
-                                        Il s'agit de mon site web personnel, développé en HTML, CSS et JavaScript.
-                                        Il me permet de présenter mon parcours, mes compétences et mes différents projets réalisés.
-                                        Ayant peu d'expérience avec le front-end, et n'étant pas un web designer qualifié, ce site web
-                                        a été conçu avec l'aide d'IA génératives (principalement Gemini), puis affiné et personnalisé par mes soins.
-                                    </p>
-                                    <div class="project-links">
-                                        <a href="https://gaston.krabansky.fr" target="_blank" class="btn small-btn live-btn">
-                                            <i class="fas fa-external-link-alt"></i> Voir le Site
-                                        </a>
-                                        <a href="https://github.com/SniperTVmc/gaston.krabansky.fr" target="_blank" class="btn small-btn github-btn">
-                                            <i class="fab fa-github"></i> Code Source
-                                        </a>
-                                    </div>
-                                </article>
+        <!-- Contact Section -->
+        <section id="contact" class="container">
+            <div class="contact-box">
+                <h2 class="section-title">Me <span>Contacter</span></h2>
+                <p class="contact-subtitle">Intéressé par mon profil ou un projet ? Laissez-moi un message !</p>
 
+                <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="e9e4f16b-9dd7-4356-9534-e4461f55eedc">
 
-                                <article class="project-card">
-                                    <img src="images/javapluginextended.webp" alt="Aperçu de mon framework pour plugins Minecraft" class="project-img" loading="lazy">
-                                    <h4>JavaPluginExtended - 2025</h4>
-                                    <p class="description">
-                                        JavaPluginExtended est un framework pour Bukkit/Paper/Bungeecord/Velocity. Il a pour but d'être léger, optimisé et facile à utiliser,
-                                        avec une large collection de méthodes prêtes à l'emploi afin de simplifier le développement de plugins Minecraft en Java.
-                                        Ce framework permet ainsi de gagner du temps et d'améliorer la qualité du code des plugins développés.
-                                    </p>
-                                    <div class="project-links">
-                                        <a href="https://github.com/SniperTVmc/ChatDefender" target="_blank" class="btn small-btn github-btn">
-                                            <i class="fab fa-github"></i> Code Source
-                                        </a>
-                                    </div>
-                                </article>
-
-                            </div>
-                        </div>
-
-                        <button class="slider-btn next" aria-label="Projet suivant">›</button>
-
+                    <div class="form-group">
+                        <label for="name">Nom / Entreprise <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
                     </div>
 
-                    <div class="slider-dots" aria-label="Progression des projets"></div>
-                </div>
-            </section>
+                    <div class="form-group">
+                        <label for="subject">Objet</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
 
-            <section id="contact" class="section">
-                <div class="container">
-                    <h3>Contactez-moi</h3>
-                    <p>Intéressé par mon profil ou un projet ? Laissez-moi un message !</p>
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
 
-                    <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <div class="form-group">
+                        <label for="message">Votre Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
 
-                        <input type="hidden" name="access_key" value="e9e4f16b-9dd7-4356-9534-e4461f55eedc">
+                    <button type="submit" class="btn btn-fill submit-btn">Envoyer le Message <i class="fas fa-paper-plane"></i></button>
+                    <p id="form-message" class="form-message"></p>
 
-                        <div class="form-group">
-                            <label for="name">Nom / Entreprise<a>*</a></label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
+                    <div id="h-captcha" class="h-captcha" data-captcha="true" data-lang="fr"></div>
+                </form>
+            </div>
+        </section>
 
-                        <div class="form-group">
-                            <label for="subject">Objet</label>
-                            <input type="text" id="subject" name="subject">
-                        </div>
 
-                        <div class="form-group">
-                            <label for="email">Email<a>*</a></label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Votre Message<a>*</a></label>
-                            <textarea id="message" name="message" rows="6" required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn primary-btn submit-btn">Envoyer le Message</button>
-                        <p id="form-message" class="form-message"></p>
-
-                        <div id="h-captcha" class="h-captcha"
-                             data-captcha="true"
-                             data-lang="fr"
-                        ></div>
-                    </form>
-                </div>
-            </section>
-        </main>
-
+        <!-- Footer Section -->
         <footer>
-            <div class="container">
-                <p>&copy; <span id="current-year"></span> Gaston Krabansky. Tous droits réservés.</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/gaston-krabansky/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/SniperTVmc/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="mailto:gaston.krabansky@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                </div>
+            <p>&copy; <span id="current-year"></span> Gaston Krabansky. Tous droits réservés.</p>
+            <p>Conçu et développé avec l'aide de Gemini puis adapté par mes soins.</p>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/gaston-krabansky/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/SniperTVmc/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:gaston.krabansky@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+33648545504" target="_blank"><i class="fas fa-phone"></i></a>
             </div>
         </footer>
 

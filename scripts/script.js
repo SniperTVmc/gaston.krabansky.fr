@@ -1,74 +1,112 @@
 
 
 // Dynamic current year in footer
-
 const currentYear = new Date().getFullYear();
 document.getElementById('current-year').textContent = currentYear;
 
 
-// Theme toggle with system preference detection
-
-
-const themeToggle = document.getElementById('theme-toggle');
-const body = document.body;
-
-function getInitialTheme() {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        return savedTheme;
-    }
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        return 'dark';
-    }
-    return 'light';
-}
-
-function applyTheme(theme) {
-    body.className = theme + '-theme';
-    if (theme === 'dark') {
-        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+// Scroll Navigation Bar Effect
+const nav = document.querySelector('nav');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        nav.style.background = '#000000';
+        nav.style.boxShadow = '0 5px 20px rgba(255, 49, 49, 0.1)';
     } else {
-        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-    }
-    localStorage.setItem('theme', theme);
-    document.getElementById('h-captcha').setAttribute('data-theme', theme);
-}
-
-applyTheme(getInitialTheme());
-
-themeToggle.addEventListener('click', () => {
-    const newTheme = body.classList.contains('light-theme') ? 'dark' : 'light';
-    applyTheme(newTheme);
-});
-
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-    if (!localStorage.getItem('theme')) {
-        applyTheme(e.matches ? 'dark' : 'light');
+        nav.style.background = 'rgba(10, 10, 10, 0.95)';
+        nav.style.boxShadow = 'none';
     }
 });
 
 
-// Smooth scrolling for anchor links
+// Mobile Navigation Toggle
+const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.nav-links li');
 
+burger.addEventListener('click', () => {
+    navLinks.classList.toggle('nav-active');
+    burger.classList.toggle('toggle');
+});
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-
-        if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('nav-active');
     });
 });
 
 
+// Tabbed Content Functionality
+const tabBtns = document.querySelectorAll('.tab-btn');
+const tabContents = document.querySelectorAll('.tab-content');
+
+tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        tabBtns.forEach(b => b.classList.remove('active'));
+        tabContents.forEach(c => c.classList.remove('active-content'));
+
+        btn.classList.add('active');
+
+        const targetId = btn.getAttribute('data-target');
+        document.querySelector(targetId).classList.add('active-content');
+    });
+});
+
+
+// Simple Carousel Implementation
+const track = document.querySelector('.carousel-track');
+if (track) {
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('.next-btn');
+    const prevButton = document.querySelector('.prev-btn');
+
+    let currentIndex = 0;
+
+    const updateCarousel = () => {
+        const slides = Array.from(track.children);
+        if (slides.length === 0) return;
+
+        const slideWidth = slides[0].offsetWidth;
+        const gap = 30;
+
+        const itemsToShow = window.innerWidth > 1024 ? 2 : 1;
+        if (currentIndex > slides.length - itemsToShow) {
+            currentIndex = Math.max(0, slides.length - itemsToShow);
+        }
+
+        track.style.transform = `translateX(-${(slideWidth + gap) * currentIndex}px)`;
+    };
+
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(updateCarousel, 100);
+    });
+
+    nextButton.addEventListener('click', () => {
+        const itemsToShow = window.innerWidth > 992 ? 2 : 1;
+
+        if (currentIndex < slides.length - itemsToShow) {
+            currentIndex++;
+        } else {
+            currentIndex = 0;
+        }
+        updateCarousel();
+    });
+
+    prevButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            const itemsToShow = window.innerWidth > 992 ? 2 : 1;
+            currentIndex = slides.length - itemsToShow;
+        }
+        updateCarousel();
+    });
+    window.addEventListener('resize', updateCarousel);
+}
+
+
 // Contact form submission using Web3Forms
-
-
 const contactForm = document.getElementById('contact-form');
 const formMessage = document.getElementById('form-message');
 
@@ -122,77 +160,3 @@ contactForm.addEventListener('submit', async (e) => {
         console.error('Erreur du formulaire:', error);
     }
 });
-
-
-// Slider functionality for projects section
-
-
-const grid = document.querySelector('.projects-grid');
-const cards = document.querySelectorAll('.project-card');
-const prevBtn = document.querySelector('.slider-btn.prev');
-const nextBtn = document.querySelector('.slider-btn.next');
-const dotsContainer = document.querySelector('.slider-dots');
-
-let index = 0;
-
-function getCardWidth() {
-    return document.querySelector('.project-card').offsetWidth;
-}
-
-function updateSlider() {
-    grid.style.transform = `translateX(-${index * getCardWidth()}px)`;
-    updateDots();
-}
-
-function createDots() {
-    cards.forEach((_, i) => {
-        const dot = document.createElement('span');
-        dot.classList.add('slider-dot');
-        if (i === 0) dot.classList.add('active');
-
-        dot.addEventListener('click', () => {
-            index = i;
-            updateSlider();
-        });
-
-        dotsContainer.appendChild(dot);
-    });
-}
-
-function updateDots() {
-    const dots = document.querySelectorAll('.slider-dot');
-    dots.forEach(dot => dot.classList.remove('active'));
-    dots[index].classList.add('active');
-}
-
-nextBtn.addEventListener('click', () => {
-    index = (index + 1) % cards.length;
-    updateSlider();
-});
-
-prevBtn.addEventListener('click', () => {
-    index = (index - 1 + cards.length) % cards.length;
-    updateSlider();
-});
-
-createDots();
-
-
-// Background tab switcher
-
-
-function switchTab(tabId) {
-    const contents = document.querySelectorAll('.tab-content');
-    contents.forEach(content => content.classList.remove('active'));
-
-    const buttons = document.querySelectorAll('.tab-btn');
-    buttons.forEach(btn => btn.classList.remove('active'));
-
-    document.getElementById(tabId).classList.add('active');
-
-    buttons.forEach(btn => {
-        if (btn.getAttribute('onclick').includes(`'${tabId}'`)) {
-            btn.classList.add('active');
-        }
-    });
-}
