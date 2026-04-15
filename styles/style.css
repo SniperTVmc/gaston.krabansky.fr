@@ -748,14 +748,47 @@ footer {
     }
 
     .contact-form {
-        padding: 20px;
+        padding: 15px;
     }
 
     #hero h1 {
         font-size: 1.8rem;
     }
 
+    #hero p {
+        font-size: 1rem;
+    }
+
     .project-img {
         height: 200px;
+    }
+
+    .project-tech-stack-container {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .project-tech-stack {
+        font-size: 0.8rem;
+        margin-right: 0;
+    }
+
+    .project-label-container {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .project-label {
+        margin-right: 0;
+    }
+
+    .project-links {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .project-links .btn {
+        justify-content: center;
     }
 }
