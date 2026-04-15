@@ -459,7 +459,29 @@ nav {
 }
 
 .project-card:hover .project-img {
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+.project-title {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.project-date {
+    color: var(--text-secondary);
+}
+
+#projects .project-info h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+}
+
+#projects .project-info .project-date {
+    margin-left: auto;
+    white-space: nowrap;
+    font-size: 0.95rem;
 }
 
 .project-info {
@@ -476,11 +498,43 @@ nav {
     font-size: 0.95rem;
 }
 
-.tech-stack {
+.project-label-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.project-label {
+    color: var(--text-secondary);
+    font-size: 0.6rem;
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--second-bg);
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.project-tech-stack-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.project-tech-stack {
     color: var(--main-color);
     font-size: 0.9rem;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-right: 10px;
+    background-color: var(--second-bg);
+    padding: 3px 8px;
+    border-radius: 6px;
 }
 
 .project-links {
@@ -675,6 +729,10 @@ footer {
 
     .carousel-container {
         padding: 0 35px;
+    }
+
+    #projects .project-info h3 {
+        flex-wrap: wrap;
     }
 }
 
