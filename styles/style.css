@@ -634,6 +634,12 @@ nav {
 .form-message.success { color: #2ecc71; }
 .form-message.error { color: var(--main-color); }
 
+.submit-btn {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+
 /* --- FOOTER --- */
 footer {
     text-align: center;
