@@ -1,0 +1,131 @@
+
+
+
+
+
+------------------------------------- 1er prompt ------------------------------------------
+
+
+
+
+
+Tu vas être mon assistant dans la conception et la réalisation de mon site web type portfolio.
+
+Ce que j'ai déjà : https://github.com/SniperTVmc/gaston.krabansky.fr
+La dernière version à jour de mon site est accessible sur ce répertoire. Il s'agit d'une simple page, décrivant mes compétences, mon expérience, un formulaire de contact, mes différents projets, et une petite introduction.
+
+Ce dont j'ai besoin :
+Un nouveau site avec un nouveau style.
+Un thème unique plutôt sombre.
+Différentes pages pour chaque section :
+Page d'accueil avec une petite introduction me concernant.
+Une page avec mes différentes compétences.
+Une page avec mes différents projets.
+Une page avec mon formulaire de contact.
+Une page avec mes différentes expériences.
+Les différentes pages peuvent avoir des sous-pages.
+Pour la page des projets, pour chacun des projets j'aurais besoin d'une sous-page qui donne davantage de détails sur le projet.
+Pour la page de mes expérience, je veux le même principe, chaque expérience scolaire / professionnelle, une sous-page qui en parle davantage, et si il y a eu un stage, j'aimerais aussi pouvoir mettre un rapport de stage, qui sera quelque chose en plus.
+Une nouvelle section sur le thème du BTS SIO:
+Dans cette section, j'ai besoin d'ajouter les éléments afin de compléter mon site avec ce qui est attendu pour l'examen du BTS SIO Option SLAM (le portfolio).
+La première page sera consacrée pour expliquer en quoi consiste le BTS SIO, l'option slam, et les différents blocs. Quelque chose de simple qui permet à un recruteur par exemple, de comprendre en quoi il consiste.
+La seconde page sera consacrée aux différentes compétences acquises durant les deux années, grâce aux différents projets. Pour cette section il faudra se baser sur le programme officiel, et le tableau de synthèse en pièce jointe qui regroupe les grandes idées.
+Il serait intéressant de faire une liste des différentes réalisations, et pour chacun d'entre elle, noter chaque compétence acquise, de quelle manière etc. Une synthèse avec l'essentiel requis pour les différentes compétences.
+La troisième devra être consacré aux veilles technologiques. De la même manière que sur le site, il faudrait lister les différentes veilles faites, et chaque veille devra posséder sa propre page.
+Les points fort du site dont j'ai besoin :
+Des redirections régulières sur d'autres page. Exemple : Dans mon parcours (scolaire ici), faire une redirection à la section BTS SIO de mon site quand on parle du BTS SIO.
+Un site plutôt intuitif, sans trop de texte ou d'information en même temps. Il faut que même quelqu'un ayant du mal avec les sites, etc. puisse comprendre facilement ou cliquer pour avoir ce qu'il veut.
+J'ai toujours besoin d'avoir mon C.V. pourquoi pas avoir une page dédiée avec une preview d'un PDF (si cela est possible) et un bouton pour le télécharger bien sûr.
+Un SEO optimisé, bien pensé.
+Le site je vais l'alimenter régulièrement, j'ai donc besoin d'un code aéré, et compréhensible. Tu peux t'inspirer de mon site actuel, et son code, en gardant le même principe avec les espaces, les commentaires, etc. Les commentaires ne doivent pas non plus être exagéré.
+Le site devra être diviser en plusieurs dossier, un dossier avec les feuilles de style, un dossier avec le code JavaScript, un dossier avec les différentes pages, et la page index.html (qui pourra probablement servir comme page d'accueil également).
+Technologies à utiliser :
+Je veux rester un site statique. Je ne veux pas avoir besoin d'installer PHP ou quoi qu'il en soit.
+Tu peux utiliser les langages suivants : HTML, CSS, JavaScript.
+Tu peux utiliser des framework tant qu'il ne rende pas la lecture du code compliqué, ou le site trop complexe.
+Aperçu de l'architecture voulue, on peut y retoucher ou l'optimiser :
+gaston.krabansky.fr/
+│
+├── index.html                         ← Accueil
+│
+├── pages/
+│   ├── competences.html
+│   ├── parcours.html
+│   ├── projets.html
+│   ├── contact.html
+│   ├── cv.html
+│   │
+│   ├── projets/
+│   │   ├── essentialsx-gui.html
+│   │   ├── etoile-du-jeu.html
+│   │   └── portfolio.html
+│   │
+│   ├── experiences/
+│   │   ├── bts-sio.html
+│   │   ├── bac.html
+│   │   ├── brevet.html
+│   │   └── france-3.html
+│   │
+│   └── bts-sio/
+│       ├── index.html                 ← Présentation BTS SIO
+│       ├── competences.html           ← Tableau / compétences
+│       ├── veilles.html               ← Liste des veilles
+│       │
+│       └── veilles/
+│           ├── veille-1.html
+│           ├── veille-2.html
+│           └── veille-3.html
+│
+├── assets/
+│   ├── css/
+│   │   ├── style.css                  ← Base générale
+│   │   ├── components.css             ← Boutons, cartes, navbar...
+│   │   └── responsive.css             ← Mobile / tablette
+│   │
+│   ├── js/
+│   │   ├── main.js
+│   │   ├── navigation.js
+│   │   └── components.js
+│   │
+│   ├── images/
+│   │   ├── profile/
+│   │   ├── projects/
+│   │   ├── experiences/
+│   │   ├── bts-sio/
+│   │   └── favicon/
+│   │
+│   └── documents/
+│       ├── cv/
+│       │   └── cv.pdf
+│       └── rapports/
+│           └── rapport-france-3.pdf
+│
+├── robots.txt
+├── sitemap.xml
+├── humans.txt
+├── llms.txt
+└── README.md
+
+
+Je veux donc que tu reprennes les informations déjà présente dans mon site web actuel, que tu les replaces comme il faut. Je m'occupe du reste à compléter. Si jamais il manque du contenu, n'hésite pas à inventer, mais il faut bien que je m'en rende compte que je dois corriger.
+
+
+
+
+
+------------------------------------- 2ème prompt ------------------------------------------
+
+
+
+
+
+J'aimerais que tu me travailles la page compétences BTS SIO.
+Le tableau de synthèse doit être plus large, j'aimerais éviter au maximum d'avoir une barre de scroll horizontale.
+Je voudrais aussi une page pour chaque réalisations.
+Chaque page présenterait les différentes compétences acquise, et en mode spoiler, quand on clique dessus, on a un détails par compétences.
+
+De même que pour la page compétences (personnelles on va dire), il y a trois blocs, la disposition n'est pas optimale, peut être faire 3 blocs empilés, qui seraient ainsi plus larges.
+
+Enfin pour les différents projets, si tu peux ajouter un systyème de bloc pour quelque partie, par exemple pour les compétences ou autres. Sans trop bourrer, tu peux utiliser des système de "spoiler", ou ce genre de chose. J'aimerais bien ne pas avoir que du texte en brut, mais pas trop de blocs non plus trouve le juste équilibre.
+
+Apporte donc ces seules modifications, et redonne moi les fichiers modifiés.
