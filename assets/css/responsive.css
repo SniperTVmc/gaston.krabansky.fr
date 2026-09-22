@@ -1,0 +1,142 @@
+/* ==========================================================================
+   RESPONSIVE.CSS — Media queries (mobile / tablette)
+   Regroupées ici par point de rupture pour garder style.css et
+   components.css lisibles.
+   ========================================================================== */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 60px 5%;
+    }
+
+    .page-header {
+        padding: 110px 5% 50px 5%;
+    }
+
+    .breadcrumb {
+        padding: 12px 5%;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: justify;
+    }
+
+    .cv-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .cv-side {
+        position: static;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        position: fixed;
+        right: -100%;
+        top: var(--nav-height);
+        height: calc(100vh - var(--nav-height));
+        background-color: rgba(10, 10, 10, 0.98);
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        transition: 0.5s ease;
+        padding-top: 40px;
+        z-index: 999;
+        overflow-y: auto;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .nav-links.nav-active {
+        right: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    #hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-grid-new,
+    .card-grid,
+    .overview-grid,
+    .blocs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tab-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .has-tooltip::after {
+        width: 200px;
+        font-size: 0.75rem;
+    }
+
+    .item-body h3 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cv-preview embed,
+    .cv-preview iframe {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section-title {
+        font-size: 1.7rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    #hero h1 {
+        font-size: 1.7rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .item-img {
+        height: 170px;
+    }
+
+    .detail-links,
+    .hero-btns {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .detail-links .btn,
+    .hero-btns .btn {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url><loc>https://gaston.krabansky.fr/</loc><priority>1.0</priority></url>
+
+    <url><loc>https://gaston.krabansky.fr/pages/competences.html</loc><priority>0.8</priority></url>
+    <url><loc>https://gaston.krabansky.fr/pages/parcours.html</loc><priority>0.8</priority></url>
+    <url><loc>https://gaston.krabansky.fr/pages/projets.html</loc><priority>0.8</priority></url>
+    <url><loc>https://gaston.krabansky.fr/pages/cv.html</loc><priority>0.7</priority></url>
+    <url><loc>https://gaston.krabansky.fr/pages/contact.html</loc><priority>0.6</priority></url>
+
+    <url><loc>https://gaston.krabansky.fr/pages/projets/essentialsx-gui.html</loc><priority>0.6</priority></url>
+    <url><loc>https://gaston.krabansky.fr/pages/projets/etoile-du-jeu.html</loc><priority>0.6</priority></url>
+    <url><loc>https://gaston.krabansky.fr/pages/projets/portfolio.html</loc><priority>0.6</priority></url>
+
+    <url><loc>https://gaston.krabansky.fr/pages/experiences/bts-sio.html</loc><priority>0.5</priority></url>
+    <url><loc>https://gaston.krabansky.fr/pages/experiences/bac.html</loc><priority>0.5</priority></url>
+    <url><loc>https://gaston.krabansky.fr/pages/experiences/brevet.html</loc><priority>0.5</priority></url>
+    <url><loc>https://gaston.krabansky.fr/pages/experiences/france-3.html</loc><priority>0.5</priority></url>
+
+    <url><loc>https://gaston.krabansky.fr/pages/bts-sio/index.html</loc><priority>0.8</priority></url>
+    <url><loc>https://gaston.krabansky.fr/pages/bts-sio/competences.html</loc><priority>0.7</priority></url>
+    <url><loc>https://gaston.krabansky.fr/pages/bts-sio/veilles.html</loc><priority>0.6</priority></url>
+    <url><loc>https://gaston.krabansky.fr/pages/bts-sio/veilles/veille-1.html</loc><priority>0.4</priority></url>
+    <url><loc>https://gaston.krabansky.fr/pages/bts-sio/veilles/veille-2.html</loc><priority>0.4</priority></url>
+    <url><loc>https://gaston.krabansky.fr/pages/bts-sio/veilles/veille-3.html</loc><priority>0.4</priority></url>
+
+</urlset>

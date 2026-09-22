@@ -1,0 +1,12 @@
+/* TEAM */
+Développeur : Gaston Krabansky
+Contact : gaston.krabansky [at] gmail.com
+GitHub : https://github.com/SniperTVmc
+LinkedIn : https://www.linkedin.com/in/gaston-krabansky/
+Localisation : Lille, France
+
+/* SITE */
+Nom : Portfolio de Gaston Krabansky
+Dernière mise à jour : 2026
+Langue : Français
+Technologies : HTML5, CSS3, JavaScript (site statique, sans framework)

@@ -1,0 +1,26 @@
+# Gaston Krabansky - Portfolio
+
+> Site personnel de Gaston Krabansky, étudiant en BTS Services Informatiques aux Organisations
+> (SIO), option SLAM, au lycée Gaston Berger à Lille. Développeur Java/Python et administrateur
+> système Linux.
+
+## Pages principales
+
+- [Accueil](https://gaston.krabansky.fr/) : présentation générale
+- [Compétences](https://gaston.krabansky.fr/pages/competences.html) : compétences techniques (développement, systèmes & réseaux, outils)
+- [Parcours](https://gaston.krabansky.fr/pages/parcours.html) : parcours scolaire et expériences professionnelles
+- [Projets](https://gaston.krabansky.fr/pages/projets.html) : projets personnels et scolaires (EssentialsX-GUI, L'Étoile du jeu, ce portfolio)
+- [CV](https://gaston.krabansky.fr/pages/cv.html) : curriculum vitae consultable et téléchargeable
+- [Contact](https://gaston.krabansky.fr/pages/contact.html) : formulaire de contact
+
+## Section BTS SIO (épreuve E5)
+
+- [Présentation du BTS SIO](https://gaston.krabansky.fr/pages/bts-sio/index.html)
+- [Compétences acquises](https://gaston.krabansky.fr/pages/bts-sio/competences.html)
+- [Veilles technologiques](https://gaston.krabansky.fr/pages/bts-sio/veilles.html)
+
+## Contact
+
+Email : gaston.krabansky@gmail.com
+GitHub : https://github.com/SniperTVmc
+LinkedIn : https://www.linkedin.com/in/gaston-krabansky/

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+
+        <!-- Balises de base -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        <title>Contact | Gaston Krabansky</title>
+
+        <!-- SEO -->
+        <meta name="description" content="Contactez Gaston Krabansky par formulaire, email, téléphone ou LinkedIn.">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://gaston.krabansky.fr/pages/contact.html">
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://gaston.krabansky.fr/pages/contact.html">
+        <meta property="og:title" content="Contact | Gaston Krabansky">
+        <meta property="og:description" content="Contactez Gaston Krabansky par formulaire, email, téléphone ou LinkedIn.">
+        <meta property="og:image" content="https://avatars.githubusercontent.com/u/204613336?v=4">
+
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="Contact | Gaston Krabansky">
+        <meta property="twitter:description" content="Contactez Gaston Krabansky par formulaire, email, téléphone ou LinkedIn.">
+        <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/204613336?v=4">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="../assets/images/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="../assets/images/favicon/site.webmanifest" />
+
+        <!-- Préconnexions CDN -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+        <!-- Feuilles de style -->
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/components.css">
+        <link rel="stylesheet" href="../assets/css/responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <!-- Auteur / résumé IA -->
+        <link type="text/plain" rel="author" href="../humans.txt" />
+        <link rel="help" href="../llms.txt" type="text/markdown" title="AI Summary">
+
+        <!-- Scripts (defer : exécutés après le chargement du DOM) -->
+        <script src="../assets/js/main.js" defer></script>
+        <script src="../assets/js/navigation.js" defer></script>
+        <script src="../assets/js/components.js" defer></script>
+
+    </head>
+    <body data-page="contact">
+
+        <!-- Navigation -->
+        <nav>
+            <a href="../index.html" class="logo">Gaston <span class="highlight">Krabansky</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html" data-nav="home">Accueil</a></li>
+                <li><a href="../pages/competences.html" data-nav="competences">Compétences</a></li>
+                <li><a href="../pages/parcours.html" data-nav="parcours">Parcours</a></li>
+                <li><a href="../pages/projets.html" data-nav="projets">Projets</a></li>
+                <li><a href="../pages/bts-sio/index.html" data-nav="bts-sio">BTS SIO</a></li>
+                <li><a href="../pages/cv.html" data-nav="cv">CV</a></li>
+                <li><a href="../pages/contact.html" data-nav="contact" class="active">Contact</a></li>
+            </ul>
+            <button class="burger" aria-label="Ouvrir le menu"><i class="fas fa-bars"></i></button>
+        </nav>
+
+        <!-- Fil d'ariane -->
+        <div class="breadcrumb">
+            <a href="../index.html">Accueil</a> <span class="sep">/</span> <span class="current">Contact</span>
+        </div>
+
+
+        <div class="page-header">
+            <h1>Me <span>Contacter</span></h1>
+            <p>Intéressé par mon profil ou un projet ? Laissez-moi un message, je réponds rapidement.</p>
+        </div>
+
+        <section class="container">
+            <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="e9e4f16b-9dd7-4356-9534-e4461f55eedc">
+
+                <div class="form-group">
+                    <label for="name">Nom / Entreprise <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Objet</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Votre message <span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <div id="h-captcha" class="h-captcha" data-captcha="true" data-lang="fr" data-theme="dark"></div>
+
+                <button type="submit" class="btn btn-fill submit-btn">Envoyer le message <i class="fas fa-paper-plane"></i></button>
+                <p id="form-message" class="form-message"></p>
+            </form>
+
+            <div class="contact-alt">
+                <p>Vous pouvez aussi me joindre directement :</p>
+                <div class="social-icons" style="justify-content:center; display:flex; margin-top:15px;">
+                    <a href="https://www.linkedin.com/in/gaston-krabansky/" target="_blank" aria-label="Profil LinkedIn de Gaston Krabansky"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/SniperTVmc/" target="_blank" aria-label="Profil GitHub de Gaston Krabansky"><i class="fab fa-github"></i></a>
+                    <a href="mailto:gaston.krabansky@gmail.com" target="_blank" aria-label="E-Mail de Gaston Krabansky"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+33648545504" target="_blank" aria-label="Téléphone de Gaston Krabansky"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Pied de page -->
+        <footer>
+            <p>&copy; <span id="current-year"></span> Gaston Krabansky. Tous droits réservés.</p>
+            <div class="social-icons" style="margin-top:15px;">
+                <a href="https://www.linkedin.com/in/gaston-krabansky/" target="_blank" aria-label="Profil LinkedIn de Gaston Krabansky"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/SniperTVmc/" target="_blank" aria-label="Profil GitHub de Gaston Krabansky"><i class="fab fa-github"></i></a>
+                <a href="mailto:gaston.krabansky@gmail.com" target="_blank" aria-label="E-Mail de Gaston Krabansky"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+33648545504" target="_blank" aria-label="Téléphone de Gaston Krabansky"><i class="fas fa-phone"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="../index.html">Accueil</a>·
+                <a href="../pages/cv.html">CV</a>·
+                <a href="../pages/contact.html">Contact</a>·
+                <a href="../pages/bts-sio/index.html">BTS SIO</a>
+            </div>
+        </footer>
+
+        <script src="https://web3forms.com/client/script.js" async defer></script>
+    </body>
+</html>

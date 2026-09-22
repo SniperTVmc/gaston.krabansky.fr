@@ -2,42 +2,49 @@
 <html lang="fr">
     <head>
 
-
-        <!-- Basic Meta Tags -->
+        <!-- Balises de base -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-        <title>Gaston Krabansky | Développeur Java & Étudiant - Lille (BTS SIO)</title>
+        <title>Gaston Krabansky | Développeur Java & Étudiant BTS SIO - Lille</title>
 
-
-        <!-- SEO Meta Tags -->
-        <meta name="description" content="Portfolio de Gaston Krabansky, développeur Java et administrateur système Linux à Lille. Étudiant en BTS SIO, je conçois des solutions backend et des plugins Minecraft. Découvrez mes projets.">
+        <!-- SEO -->
+        <meta name="description" content="Portfolio de Gaston Krabansky, développeur Java et administrateur système Linux à Lille. Étudiant en BTS SIO (option SLAM), je conçois des solutions backend et des plugins Minecraft.">
         <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://gaston.krabansky.fr/">
 
-
-        <!-- Open Graph Meta Tags -->
+        <!-- Open Graph -->
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://gaston.krabansky.fr/">
-        <meta property="og:title" content="Gaston Krabansky | Étudiant en Informatique & Développeur Java">
-        <meta property="og:description" content="Étudiant en informatique spécialisé en développement Java.">
+        <meta property="og:title" content="Gaston Krabansky | Étudiant en BTS SIO & Développeur Java">
+        <meta property="og:description" content="Portfolio de Gaston Krabansky, développeur Java et administrateur système Linux à Lille. Étudiant en BTS SIO (option SLAM), je conçois des solutions backend et des plugins Minecraft.">
         <meta property="og:image" content="https://avatars.githubusercontent.com/u/204613336?v=4">
 
         <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:url" content="https://gaston.krabansky.fr/">
-        <meta property="twitter:title" content="Gaston Krabansky | Étudiant en Informatique & Développeur Java">
-        <meta property="twitter:description" content="Étudiant en informatique spécialisé en développement Java.">
+        <meta property="twitter:title" content="Gaston Krabansky | Étudiant en BTS SIO & Développeur Java">
+        <meta property="twitter:description" content="Portfolio de Gaston Krabansky, développeur Java et administrateur système Linux à Lille. Étudiant en BTS SIO (option SLAM), je conçois des solutions backend et des plugins Minecraft.">
         <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/204613336?v=4">
 
-
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
-        <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
-        <link rel="manifest" href="/images/favicon/site.webmanifest" />
+        <link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="assets/images/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
 
+        <!-- Préconnexions CDN -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-        <!-- Structured Data JSON-LD -->
+        <!-- Feuilles de style -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/components.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <!-- Auteur / résumé IA -->
+        <link type="text/plain" rel="author" href="humans.txt" />
+        <link rel="help" href="llms.txt" type="text/markdown" title="AI Summary">
+
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
@@ -46,12 +53,8 @@
                 "alternateName": ["Sniper_TVmc", "Gaston kbk", "kbk"],
                 "url": "https://gaston.krabansky.fr",
                 "image": "https://avatars.githubusercontent.com/u/204613336?v=4",
-                "description": "Portfolio de Gaston Krabansky, développeur Java et administrateur système à Lille. Étudiant en BTS SIO, expert en création de plugins Minecraft et backend.",
-                "jobTitle": "Développeur Java Junior & Administrateur Système",
-                "worksFor": {
-                    "@type": "Organization",
-                    "name": "Développeur Freelance / Open Source"
-                },
+                "description": "Portfolio de Gaston Krabansky, développeur Java et administrateur système à Lille. Étudiant en BTS SIO option SLAM.",
+                "jobTitle": "Étudiant en BTS SIO - Développeur",
                 "address": {
                     "@type": "PostalAddress",
                     "addressLocality": "Lille",
@@ -64,135 +67,71 @@
                     "https://github.com/SniperTVmc",
                     "https://sniper-tvmc.gitbook.io/essentialsx-gui/"
                 ],
-                "knowsAbout": [
-                    "Java",
-                    "Python",
-                    "SQL",
-                    "HTML5",
-                    "CSS3",
-                    "JavaScript",
-                    "Git",
-                    "Linux (Debian)",
-                    "Spigot API",
-                    "Docker",
-                    "Administration Système"
-                ],
+                "knowsAbout": ["Java", "Python", "SQL", "HTML5", "CSS3", "JavaScript", "Git", "Linux (Debian)", "Spigot API", "Docker", "Administration Système"],
                 "alumniOf": [
-                    {
-                        "@type": "EducationalOrganization",
-                        "name": "Lycée Gaston Berger",
-                        "description": "BTS Services Informatiques aux Organisations (SIO) - Option SLAM"
-                    },
-                    {
-                        "@type": "EducationalOrganization",
-                        "name": "Lycée Marguerite de Flandre"
-                    }
-                ],
-                "mainEntityOfPage": {
-                    "@type": "WebSite",
-                    "name": "Portfolio de Gaston Krabansky - Développeur Java & Admin Sys",
-                    "url": "https://gaston.krabansky.fr"
-                }
+                    {"@type": "EducationalOrganization", "name": "Lycée Gaston Berger", "description": "BTS Services Informatiques aux Organisations (SIO) - Option SLAM"},
+                    {"@type": "EducationalOrganization", "name": "Lycée Marguerite de Flandre"}
+                ]
             }
         </script>
 
-
-        <!-- Meta Theme Color -->
-        <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-        <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
-
-
-        <!-- Preconnects for CDNs -->
-        <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-        <link rel="preconnect" href="https://cdn.jsdelivr.net">
-
-
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-
-        <!-- Preload Key Resources -->
-        <link rel="preload" as="image" href="images/illustration.webp">
-
-
-        <!-- Scripts -->
-        <script src="scripts/script.js" defer></script>
-
-
-        <!-- Canonical Link -->
-        <link rel="canonical" href="https://gaston.krabansky.fr/">
-
-
-        <!-- Author Information -->
-        <link type="text/plain" rel="author" href="humans.txt" />
-
-
-        <!-- AI Summary Link -->
-        <link rel="help" href="llms.txt" type="text/markdown" title="AI Summary">
-
+        <!-- Scripts (defer : exécutés après le chargement du DOM) -->
+        <script src="assets/js/main.js" defer></script>
+        <script src="assets/js/navigation.js" defer></script>
+        <script src="assets/js/components.js" defer></script>
 
     </head>
-    <body>
+    <body data-page="home">
 
-
-        <!-- Navigation Bar -->
+        <!-- Navigation -->
         <nav>
-            <div class="logo">Gaston <span class="highlight">Krabansky</span></div>
+            <a href="index.html" class="logo">Gaston <span class="highlight">Krabansky</span></a>
             <ul class="nav-links">
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#experience">Parcours</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html" data-nav="home" class="active">Accueil</a></li>
+                <li><a href="pages/competences.html" data-nav="competences">Compétences</a></li>
+                <li><a href="pages/parcours.html" data-nav="parcours">Parcours</a></li>
+                <li><a href="pages/projets.html" data-nav="projets">Projets</a></li>
+                <li><a href="pages/bts-sio/index.html" data-nav="bts-sio">BTS SIO</a></li>
+                <li><a href="pages/cv.html" data-nav="cv">CV</a></li>
+                <li><a href="pages/contact.html" data-nav="contact">Contact</a></li>
             </ul>
-            <div class="burger">
-                <i class="fas fa-bars"></i>
-            </div>
+            <button class="burger" aria-label="Ouvrir le menu"><i class="fas fa-bars"></i></button>
         </nav>
 
 
-        <!-- Hero Section -->
+        <!-- Hero -->
         <header id="hero">
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1>Bonjour, je suis <span class="highlight">Gaston Krabansky</span></h1>
-                <p>Étudiant en informatique / Développeur Java</p>
+                <p>Étudiant en BTS SIO (option SLAM) / Développeur Java</p>
                 <div class="hero-btns">
-                    <a href="#projects" class="btn btn-fill">Voir mes projets <i class="fas fa-arrow-down"></i></a>
-                    <a href="files/cv-gaston_krabansky_fr.pdf" download class="btn btn-outline" target="_blank">Télécharger mon CV <i class="fas fa-download"></i></a>
+                    <a href="pages/projets.html" class="btn btn-fill">Voir mes projets <i class="fas fa-arrow-right"></i></a>
+                    <a href="assets/documents/cv/cv.pdf" download class="btn btn-outline">Télécharger mon CV <i class="fas fa-download"></i></a>
                 </div>
             </div>
         </header>
 
-
-        <!-- About Section -->
+        <!-- À propos -->
         <section id="about" class="container">
             <h2 class="section-title">À propos de <span>moi</span></h2>
             <div class="about-grid">
                 <div class="about-img">
-                    <img src="images/logo.webp"
+                    <img src="assets/images/profile/logo.webp"
                          alt="Portrait de Gaston Krabansky, développeur Java"
-                         width="512"
-                         height="512"
-                         loading="eager"
-                         style="width: 100%; border-radius: 15px; border: 2px solid var(--main-color);">
+                         width="512" height="512" loading="eager">
                 </div>
                 <div class="about-text">
                     <p>
                         Cela fait maintenant plus de cinq ans que je m'intéresse à la programmation. Depuis mes
-                        débuts et jusqu'à aujourd'hui, j'ai pu acquérir de solides compétences dans le domaine.<br>
-                        Ayant principalement travaillé en Java, et Python, je suis à l'aise avec la
-                        programmation orientée objet.<br>
-                        Mon intérêt s'est surtout porté sur le développement backend et l'administration système,
-                        bien que j'aie aussi des connaissances en HTML, CSS et JavaScript.<br>
-                        De ce fait, j'ai pu m'intéresser à l'administration système sous Linux, notamment à travers
-                        la gestion de mon propre serveur Minecraft : gestion de sites web avec Apache,
-                        de bases de données avec MariaDB, d'un serveur mail avec Poste.io, la gestion de
-                        domaines avec Cloudflare et Certbot, et également d'une infrastructure permettant la
-                        gestion de serveurs de jeu avec Pterodactyl (ou son successeur Pelican).
+                        débuts et jusqu'à aujourd'hui, j'ai pu acquérir de solides compétences dans le domaine.<br><br>
+                        Ayant principalement travaillé en Java et Python, je suis à l'aise avec la programmation
+                        orientée objet. Mon intérêt s'est surtout porté sur le développement backend et
+                        l'administration système, bien que j'aie aussi des connaissances en HTML, CSS et JavaScript.<br><br>
+                        Je suis actuellement étudiant en <a href="pages/bts-sio/index.html">BTS SIO, option SLAM</a>,
+                        au lycée Gaston Berger à Lille. Je gère également mon propre serveur Linux, sur lequel
+                        j'héberge notamment des sites web, une base de données et un serveur mail.
                     </p>
-
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/gaston-krabansky/" target="_blank" aria-label="Profil LinkedIn de Gaston Krabansky"><i class="fab fa-linkedin-in"></i></a>
                         <a href="https://github.com/SniperTVmc/" target="_blank" aria-label="Profil GitHub de Gaston Krabansky"><i class="fab fa-github"></i></a>
@@ -203,265 +142,61 @@
             </div>
         </section>
 
-
-        <!-- Skills Section -->
-        <section id="skills" class="bg-dark">
+        <!-- Aperçu / accès rapide aux sections -->
+        <section class="bg-dark">
             <div class="container">
-                <h2 class="section-title">Mes <span>Compétences</span></h2>
-                <div class="skills-grid-new">
-
-                    <div class="skill-category">
-                        <div class="category-header">
-                            <i class="fas fa-code"></i>
-                            <h3>Programmation</h3>
-                        </div>
-                        <ul class="about-list">
-                            <li class="has-tooltip" data-tooltip="Expérience de 3 ans en Java, notamment via des projets personnels autour de Minecraft.">
-                                <strong>Java :</strong> POO avancée, Maven, projets personnels <i class="fas fa-question info-icon"></i>
-                            </li>
-                            <li class="has-tooltip" data-tooltip="Expérience de 3 ans en Python grâce à mes études et des projets scolaires.">
-                                <strong>Python :</strong> Scripts, projets scolaires <i class="fas fa-question info-icon"></i>
-                            </li>
-                            <li class="has-tooltip" data-tooltip="Connaissances de base en HTML5, CSS3 et JavaScript acquises lors de mes études.">
-                                <strong>Web :</strong> HTML5, CSS3, JavaScript (Niveau scolaire <i class="fas fa-question info-icon"></i>)
-                            </li>
-                            <li><strong>Base de données :</strong> SQL (Conception & Requêtes)</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="category-header">
-                            <i class="fas fa-server"></i>
-                            <h3>Systèmes & Réseaux</h3>
-                        </div>
-                        <ul class="about-list">
-                            <li><strong>OS :</strong> Administration Linux (Debian) & Windows</li>
-                            <li class="has-tooltip" data-tooltip="Expérience pratique dans la gestion et la mise en place de serveurs web et mail.">
-                                <strong>Applications web :</strong> Apache2, Poste.io, phpMyAdmin, ...<i class="fas fa-question info-icon"></i>
-                            </li>
-                            <li><strong>Bases de données :</strong> MariaDB & MySQL (Installation, configuration et utilisation)</li>
-                            <li><strong>Sécurité :</strong> Gestion SSL/TLS (Certbot), Pare-feu Linux (UFW)</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="category-header">
-                            <i class="fas fa-tools"></i>
-                            <h3>Outils & Projets</h3>
-                        </div>
-                        <ul class="about-list">
-                            <li><strong>Versioning :</strong> Git & GitHub</li>
-                            <li class="has-tooltip" data-tooltip="Expérience pratique dans la gestion et la mise en place d'infrastructures de serveurs de jeu.">
-                                <strong>Infrastructure :</strong> Pterodactyl et Pelican <i class="fas fa-question info-icon"></i>
-                            </li>
-                            <li class="has-tooltip" data-tooltip="Légère expérience pratique dans la gestion de domaines via Cloudflare : configuration DNS et règles de sécurité.">
-                                <strong>Gestion de domaine :</strong> Cloudflare <i class="fas fa-question info-icon"></i>
-                            </li>
-                            <li><strong>IDE :</strong> Suite JetBrains (IntelliJ, PyCharm, PhpStorm), VSCode</li>
-                            <li class="has-tooltip" data-tooltip="De nos jours, l'IA est un outil incontournable dans le développement.
-                                                                        Je l'utilise afin d'améliorer ma productivité et la qualité de mon code sans pour
-                                                                        autant négliger ma propre réflexion et la bonne compréhension des sujets abordés.">
-                                <strong>IA :</strong> Utilisation intelligente <i class="fas fa-question info-icon"></i> de modèles avancés (ChatGPT, Gemini)
-                            </li>
-                        </ul>
-                    </div>
-
+                <h2 class="section-title">Explorer le <span>site</span></h2>
+                <p class="section-lead">Le site est organisé en plusieurs sections. Cliquez sur une carte pour accéder directement à ce qui vous intéresse.</p>
+                <div class="overview-grid">
+                    <a href="pages/competences.html" class="overview-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Compétences</h3>
+                        <p>Développement, systèmes & réseaux, outils utilisés au quotidien.</p>
+                    </a>
+                    <a href="pages/parcours.html" class="overview-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Parcours</h3>
+                        <p>Mon parcours scolaire et mes expériences professionnelles.</p>
+                    </a>
+                    <a href="pages/projets.html" class="overview-card">
+                        <i class="fas fa-diagram-project"></i>
+                        <h3>Projets</h3>
+                        <p>Les projets personnels et scolaires que j'ai réalisés.</p>
+                    </a>
+                    <a href="pages/bts-sio/index.html" class="overview-card">
+                        <i class="fas fa-school"></i>
+                        <h3>BTS SIO</h3>
+                        <p>Épreuve E5 : présentation, compétences acquises et veilles technologiques.</p>
+                    </a>
+                    <a href="pages/cv.html" class="overview-card">
+                        <i class="fas fa-file-lines"></i>
+                        <h3>Mon CV</h3>
+                        <p>Consultez et téléchargez mon curriculum vitae au format PDF.</p>
+                    </a>
+                    <a href="pages/contact.html" class="overview-card">
+                        <i class="fas fa-paper-plane"></i>
+                        <h3>Contact</h3>
+                        <p>Une question, une opportunité ? Envoyez-moi un message.</p>
+                    </a>
                 </div>
             </div>
         </section>
 
 
-        <!-- Experience Section -->
-        <section id="experience" class="container">
-            <h2 class="section-title">Mon <span>Parcours</span></h2>
-
-            <div class="tab-buttons">
-                <button class="tab-btn active" data-target="#pro">Professionnel</button>
-                <button class="tab-btn" data-target="#edu">Scolaire</button>
-            </div>
-
-            <div class="tab-content active-content" id="pro">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h3>Administrateur informatique - France 3 (Stage d'observation)</h3>
-                        <p class="date">Décembre 2021</p>
-                        <p>Stage de trois jours au sein de la chaîne de télévision France 3 dans le service administration réseau.<br>
-                            Découverte des infrastructures réseau, des systèmes de diffusion et du métier d'administrateur réseau.<br>
-                            Initiation au langage Python avec la création de scripts simples.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-content" id="edu">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h3>BTS SIO - Option SLAM</h3>
-                        <p class="date">Septembre 2025 - Présent</p>
-                        <p>Actuellement en première année de BTS Services Informatiques aux Organisations.<br>
-                            Option Solutions Logicielles et Applications Métiers, au lycée Gaston Berger à Lille.
-                        </p>
-                    </div>
-                    <div class="timeline-item">
-                        <h3>Baccalauréat Général - Spécialités NSI & Maths</h3>
-                        <p class="date">Septembre 2022 - juillet 2025</p>
-                        <p>Obtention du Baccalauréat Général au lycée Marguerite de Flandre à Gondecourt.<br>
-                            Spécialités : Numérique et Sciences Informatiques (NSI) et Mathématiques.<br>
-                            Section Européenne Anglais.
-                        </p>
-                    </div>
-                    <div class="timeline-item">
-                        <h3>Brevet des Collèges</h3>
-                        <p class="date">Septembre 2018 - juillet 2022</p>
-                        <p>Obtention du Diplôme National du Brevet au collège Hergé à Gondecourt.<br>
-                            Concours Castor Informatique : 1er de l'établissement deux années consécutives.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Projects Section -->
-        <section id="projects" class="bg-dark">
-            <div class="container no-overflow">
-                <h2 class="section-title">Mes <span>Projets</span></h2>
-
-                <div class="carousel-container">
-                    <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-                    <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
-
-                    <div class="carousel-track">
-                        <div class="project-card">
-                            <div class="project-img" style="background-image: url('images/essentialsx-gui.webp');"></div>
-                            <div class="project-info">
-                                <h3>
-                                    <span class="project-title">EssentialsX-GUI</span>
-                                    <span class="project-date">2025 - 2026</span>
-                                </h3>
-                                <div class="project-tech-stack-container">
-                                    <label class="project-tech-stack">Java</label>
-                                    <label class="project-tech-stack">SQL</label>
-                                    <label class="project-tech-stack">Gradle</label>
-                                    <label class="project-tech-stack">Spigot API</label>
-                                </div>
-                                <p>EssentialsX-GUI est un plugin Minecraft qui offre des interfaces graphiques conviviales pour gérer les fonctionnalités d'EssentialsX,
-                                    facilitant ainsi la configuration et l'utilisation des commandes du serveur.
-                                </p>
-                                <div class="project-label-container">
-                                    <label class="project-label">+14 000 Téléchargements</label>
-                                    <label class="project-label">~450 serveurs en moyenne</label>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://sniper-tvmc.gitbook.io/essentialsx-gui/" class="btn btn-fill sm" target="_blank">Documentation <i class="fas fa-book"></i></a>
-                                    <a href="https://github.com/SniperTVmc/EssentialsX-GUI" class="btn btn-outline sm" target="_blank">Code Source <i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-img" style="background-image: url('images/etoiledujeu_fr.webp');"></div>
-                            <div class="project-info">
-                                <h3>
-                                    <span class="project-title">L'Étoile du jeu - Association</span>
-                                    <span class="project-date">2026</span>
-                                </h3>
-                                <div class="project-tech-stack-container">
-                                    <label class="project-tech-stack">PHP</label>
-                                    <label class="project-tech-stack">HTML</label>
-                                    <label class="project-tech-stack">CSS</label>
-                                    <label class="project-tech-stack">JavaScript</label>
-                                </div>
-                                <p>
-                                    Site web de l'association "L'Étoile du jeu", une association de jeux de société basée à Lille.<br>
-                                    Le site a été développé en PHP, HTML, CSS et JavaScript, avec une base de données MySQL pour la gestion des membres et des événements.
-                                    Ce projet a été réalisé dans le cadre d'un projet scolaire, en collaboration avec d'autres étudiants,
-                                    dont l'objectif était d'améliorer le site web existant de l'association en ajoutant de nouvelles fonctionnalités
-                                    et en améliorant le design.
-                                </p>
-                                <div class="project-links">
-                                    <a class="btn btn-fill sm" target="_blank">Site en développement</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-img" style="background-image: url('images/gaston_krabansky_fr.webp');"></div>
-                            <div class="project-info">
-                                <h3>
-                                    <span class="project-title">Portfolio / Site web personnel</span>
-                                    <span class="project-date">2025 - 2026</span>
-                                </h3>
-                                <div class="project-tech-stack-container">
-                                    <label class="project-tech-stack">HTML</label>
-                                    <label class="project-tech-stack">CSS</label>
-                                    <label class="project-tech-stack">JavaScript</label>
-                                </div>
-                                <p> Il s'agit de mon site web personnel, développé en HTML, CSS et JavaScript.
-                                    Ayant peu d'expérience avec le front-end, et n'étant pas un web designer qualifié,
-                                    ce site web a été conçu avec l'aide d'IA génératives (principalement Gemini),
-                                    puis affiné et personnalisé par mes soins.
-                                </p>
-                                <div class="project-links">
-                                    <a href="https://gaston.krabansky.fr" class="btn btn-fill sm" target="_blank">Voir le site <i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://github.com/SniperTVmc/gaston.krabansky.fr" class="btn btn-outline sm" target="_blank">Code Source <i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Contact Section -->
-        <section id="contact" class="container">
-            <div class="contact-box">
-                <h2 class="section-title">Me <span>Contacter</span></h2>
-                <p class="contact-subtitle">Intéressé par mon profil ou un projet ? Laissez-moi un message !</p>
-
-                <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="e9e4f16b-9dd7-4356-9534-e4461f55eedc">
-
-                    <div class="form-group">
-                        <label for="name">Nom / Entreprise <span class="required">*</span></label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">Objet</label>
-                        <input type="text" id="subject" name="subject">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email <span class="required">*</span></label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Votre Message <span class="required">*</span></label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
-                    </div>
-
-                    <div id="h-captcha" class="h-captcha" data-captcha="true" data-lang="fr" data-theme="dark"></div>
-
-                    <button type="submit" class="btn btn-fill submit-btn">Envoyer le Message <i class="fas fa-paper-plane"></i></button>
-                    <p id="form-message" class="form-message"></p>
-                </form>
-            </div>
-        </section>
-
-
-        <!-- Footer Section -->
+        <!-- Pied de page -->
         <footer>
             <p>&copy; <span id="current-year"></span> Gaston Krabansky. Tous droits réservés.</p>
-            <p>Conçu et développé avec l'aide de Gemini puis adapté par mes soins.</p>
-
-            <div class="social-icons">
+            <div class="social-icons" style="margin-top:15px;">
                 <a href="https://www.linkedin.com/in/gaston-krabansky/" target="_blank" aria-label="Profil LinkedIn de Gaston Krabansky"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/SniperTVmc/" target="_blank" aria-label="Profil GitHub de Gaston Krabansky"><i class="fab fa-github"></i></a>
                 <a href="mailto:gaston.krabansky@gmail.com" target="_blank" aria-label="E-Mail de Gaston Krabansky"><i class="fas fa-envelope"></i></a>
                 <a href="tel:+33648545504" target="_blank" aria-label="Téléphone de Gaston Krabansky"><i class="fas fa-phone"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Accueil</a>·
+                <a href="pages/cv.html">CV</a>·
+                <a href="pages/contact.html">Contact</a>·
+                <a href="pages/bts-sio/index.html">BTS SIO</a>
             </div>
         </footer>
 
